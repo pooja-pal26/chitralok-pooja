@@ -120,8 +120,8 @@ export default function ActorProfile({ onOpenVideo, isEmbed: isEmbedProp }) {
           </Link>
         )}
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: '14px', flexWrap: 'wrap' }}>
-          <span style={{
+        {/* <div style={{ display: 'flex', alignItems: 'center', gap: '14px', flexWrap: 'wrap' }}> */}
+          {/* <span style={{
             fontSize: '11px',
             letterSpacing: '0.22em',
             textTransform: 'uppercase',
@@ -130,7 +130,7 @@ export default function ActorProfile({ onOpenVideo, isEmbed: isEmbedProp }) {
             fontFamily: 'var(--font-mono)'
           }}>
             ARTIST PROFILE · CHITRALOK STUDIOS
-          </span>
+          </span> */}
           {/* <span style={{
             fontSize: '11px',
             fontFamily: 'var(--font-mono)',
@@ -139,7 +139,7 @@ export default function ActorProfile({ onOpenVideo, isEmbed: isEmbedProp }) {
           }}>
             · MODEL &amp; ACTRESS
           </span> */}
-        </div>
+        {/* </div> */}
 
         <h1 style={{
           margin: 0,
@@ -300,12 +300,15 @@ export default function ActorProfile({ onOpenVideo, isEmbed: isEmbedProp }) {
             </span>
             <div style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(4, 1fr)',
+              gridTemplateColumns: `repeat(${(profile.socialLinks || [
+                { name: 'Instagram', url: 'https://instagram.com/counterpc?igshid=szr5kayi2v6t' },
+                { name: 'Facebook', url: 'https://www.facebook.com/COUNTERPC.QUEEN.OF.WANDS' },
+                { name: 'IMDb', url: 'https://www.imdb.com' }
+              ]).length}, 1fr)`,
               gap: '10px'
             }}>
               {(profile.socialLinks || [
                 { name: 'Instagram', url: 'https://instagram.com/counterpc?igshid=szr5kayi2v6t' },
-                { name: 'YouTube', url: 'https://youtu.be/w55jPICtzK0' },
                 { name: 'Facebook', url: 'https://www.facebook.com/COUNTERPC.QUEEN.OF.WANDS' },
                 { name: 'IMDb', url: 'https://www.imdb.com' }
               ]).map((s, idx) => (

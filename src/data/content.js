@@ -1023,7 +1023,6 @@ export const siteData = {
     imdbUrl: 'https://www.imdb.com',
     socialLinks: [
       { name: 'Instagram', url: 'https://instagram.com/counterpc?igshid=szr5kayi2v6t' },
-      { name: 'YouTube', url: 'https://youtu.be/w55jPICtzK0' },
       { name: 'Facebook', url: 'https://www.facebook.com/COUNTERPC.QUEEN.OF.WANDS' },
       { name: 'IMDb', url: 'https://www.imdb.com' }
     ],
