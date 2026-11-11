@@ -26,14 +26,14 @@ export default function Director({ onOpenVideo }) {
           <span style={{ fontSize: '12px', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--gold-primary)', fontWeight: 600 }}>
             DIRECTOR PROFILE
           </span>
-          <span style={{
+          {/* <span style={{
             fontSize: '11px',
             fontFamily: 'var(--font-mono)',
             color: 'var(--text-secondary)',
             letterSpacing: '0.12em'
           }}>
             · BORN 15 SEPTEMBER 1981
-          </span>
+          </span> */}
         </div>
 
         <h1 style={{
@@ -171,7 +171,7 @@ export default function Director({ onOpenVideo }) {
 
           <p style={{ margin: 0, fontSize: '16px', lineHeight: 1.7, color: 'var(--text-light-sub)', maxWidth: '640px' }}>
             <strong style={{ color: 'var(--text-primary)', fontWeight: 600 }}>Pushpendra Singh</strong>{' '}
-            (born <span style={{ color: 'var(--gold-primary)', fontFamily: 'var(--font-mono)', fontSize: '13px' }}>15 September 1981</span>) is a prominent Indian Television and Film Director. He started his career in the Indian entertainment industry as an associate director on{' '}
+            is a prominent Indian Television and Film Director. He started his career in the Indian entertainment industry as an associate director on{' '}
             <strong style={{ color: 'var(--text-primary)', fontWeight: 600 }}>Kyaa Hoga Nimmo Kaa</strong>{' '}
             and served as second director on the classic Bollywood political drama{' '}
             <strong style={{ color: 'var(--text-primary)', fontWeight: 600 }}>Sarkar</strong>{' '}
@@ -309,6 +309,7 @@ export default function Director({ onOpenVideo }) {
                     width: '100%',
                     height: '100%',
                     objectFit: 'cover',
+                    objectPosition: 'center top',
                     transition: 'transform 0.4s ease'
                   }}
                   loading="lazy"

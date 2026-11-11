@@ -32,7 +32,7 @@ export default function DirectorSpotlight({ onOpenVideo }) {
         <div className="director-spotlight-info">
           <div className="director-spotlight-meta-top">
             <span className="director-spotlight-tag">
-              INDIAN TELEVISION &amp; FILM DIRECTOR · BORN 15 SEPT 1981
+              INDIAN TELEVISION &amp; FILM DIRECTOR
             </span>
           </div>
 

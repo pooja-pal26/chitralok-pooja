@@ -137,6 +137,48 @@ export default function ProjectModal({ project, onClose, onOpenVideo }) {
             pointerEvents: 'none'
           }} />
 
+          {/* Prominent Play Button on Cover Photo */}
+          {project.videoUrl && onOpenVideo && (
+            <button
+              type="button"
+              onClick={() => onOpenVideo(project.videoUrl, project.title)}
+              aria-label={`Play video for ${project.title}`}
+              title={`Watch ${project.cat === 'Film' ? 'Trailer' : 'Video'}`}
+              style={{
+                position: 'absolute',
+                top: '40%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                width: '68px',
+                height: '68px',
+                borderRadius: '50%',
+                background: 'rgba(7, 7, 7, 0.78)',
+                border: '2px solid var(--gold-primary)',
+                color: 'var(--gold-primary)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                cursor: 'pointer',
+                backdropFilter: 'blur(8px)',
+                boxShadow: '0 8px 32px rgba(0, 0, 0, 0.65)',
+                transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
+                zIndex: 11
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translate(-50%, -50%) scale(1.1)';
+                e.currentTarget.style.background = 'var(--gold-primary)';
+                e.currentTarget.style.color = '#070707';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translate(-50%, -50%) scale(1)';
+                e.currentTarget.style.background = 'rgba(7, 7, 7, 0.78)';
+                e.currentTarget.style.color = 'var(--gold-primary)';
+              }}
+            >
+              <Play size={24} fill="currentColor" style={{ marginLeft: '3px' }} />
+            </button>
+          )}
+
           {/* Clean Meta Details on Cover Photo */}
           <div style={{
             position: 'absolute',
@@ -161,8 +203,12 @@ export default function ProjectModal({ project, onClose, onOpenVideo }) {
               color: 'var(--gold-primary)'
             }}>
               <span>{project.cat}</span>
-              <span style={{ opacity: 0.4 }}>•</span>
-              <span>{project.year}</span>
+              {project.year && project.year.toLowerCase().trim() !== project.status?.toLowerCase().trim() && (
+                <>
+                  <span style={{ opacity: 0.4 }}>•</span>
+                  <span>{project.year}</span>
+                </>
+              )}
               {project.status && (
                 <>
                   <span style={{ opacity: 0.4 }}>•</span>
@@ -272,7 +318,7 @@ export default function ProjectModal({ project, onClose, onOpenVideo }) {
                 }}
               >
                 <Play size={13} fill="#070707" />
-                <span>Watch Trailer</span>
+                <span>{project.cat === 'Film' ? 'Watch Trailer' : 'Watch Video'}</span>
               </button>
             )}
           </div>
@@ -329,10 +375,12 @@ export default function ProjectModal({ project, onClose, onOpenVideo }) {
             </div>
             <div>
               <span style={{ display: 'block', fontSize: '11px', letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--text-muted)' }}>
-                Release Year
+                Release / Status
               </span>
               <span style={{ fontSize: '14px', color: 'var(--text-primary)', marginTop: '4px', display: 'block' }}>
-                {project.year}
+                {project.year && project.year.toLowerCase().trim() !== project.status?.toLowerCase().trim()
+                  ? `${project.year}${project.status ? ` (${project.status})` : ''}`
+                  : (project.status || project.year || 'Upcoming')}
               </span>
             </div>
             <div>

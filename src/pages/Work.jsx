@@ -118,47 +118,31 @@ export default function Work({ onOpenVideo }) {
                       width: '100%',
                       height: '100%',
                       objectFit: 'cover',
+                      objectPosition: 'center top',
                       transition: 'transform 0.45s cubic-bezier(0.16, 1, 0.3, 1)'
                     }}
                     loading="lazy"
                   />
 
                   {/* Year / Status Badge (Top-Right) */}
-                  <div style={{
-                    position: 'absolute',
-                    top: '12px',
-                    right: '12px',
-                    background: 'rgba(7, 7, 7, 0.85)',
-                    border: '1px solid var(--border-subtle)',
-                    padding: '3px 8px',
-                    fontSize: '10px',
-                    fontFamily: 'var(--font-mono)',
-                    color: 'var(--gold-primary)',
-                    letterSpacing: '0.1em',
-                    zIndex: 2,
-                    borderRadius: '2px'
-                  }}>
-                    {work.status || work.year}
-                  </div>
-
-                  {/* Category Pill Tag (Top-Left) */}
-                  <span style={{
-                    position: 'absolute',
-                    left: '12px',
-                    top: '12px',
-                    padding: '3px 8px',
-                    fontSize: '10px',
-                    fontFamily: 'var(--font-mono)',
-                    letterSpacing: '0.12em',
-                    textTransform: 'uppercase',
-                    color: 'var(--gold-primary)',
-                    background: 'rgba(7, 7, 7, 0.88)',
-                    border: '1px solid var(--border-gold)',
-                    borderRadius: '2px',
-                    zIndex: 2
-                  }}>
-                    {work.cat}
-                  </span>
+                  {(work.status || work.year) && (
+                    <div style={{
+                      position: 'absolute',
+                      top: '12px',
+                      right: '12px',
+                      background: 'rgba(7, 7, 7, 0.85)',
+                      border: '1px solid var(--border-subtle)',
+                      padding: '3px 8px',
+                      fontSize: '10px',
+                      fontFamily: 'var(--font-mono)',
+                      color: 'var(--gold-primary)',
+                      letterSpacing: '0.1em',
+                      zIndex: 2,
+                      borderRadius: '2px'
+                    }}>
+                      {work.status || work.year}
+                    </div>
+                  )}
 
                   {/* Subtle Hover "View Details" Pill */}
                   <div
@@ -190,6 +174,47 @@ export default function Work({ onOpenVideo }) {
                     <span>View Details</span>
                     <span style={{ fontSize: '11px' }}>→</span>
                   </div>
+
+                  {/* Play Video Button on Poster Card */}
+                  {work.videoUrl && onOpenVideo && (
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        onOpenVideo(work.videoUrl, work.title);
+                      }}
+                      className="project-card-play-btn"
+                      aria-label={`Watch video for ${work.title}`}
+                      style={{
+                        position: 'absolute',
+                        bottom: '12px',
+                        right: '12px',
+                        padding: '5px 12px',
+                        fontSize: '10px',
+                        fontFamily: 'var(--font-mono)',
+                        letterSpacing: '0.14em',
+                        textTransform: 'uppercase',
+                        fontWeight: 600,
+                        color: '#070707',
+                        background: 'var(--gold-primary)',
+                        border: 'none',
+                        borderRadius: '2px',
+                        opacity: 0,
+                        transform: 'translateY(6px)',
+                        transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
+                        zIndex: 3,
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '5px',
+                        cursor: 'pointer'
+                      }}
+                    >
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="#070707">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                      </svg>
+                      <span>Play Video</span>
+                    </button>
+                  )}
                 </div>
 
                 {/* Card Information Body */}
@@ -200,16 +225,6 @@ export default function Work({ onOpenVideo }) {
                   gap: '8px',
                   flex: 1
                 }}>
-                  <span style={{
-                    fontSize: '10px',
-                    fontFamily: 'var(--font-mono)',
-                    letterSpacing: '0.14em',
-                    textTransform: 'uppercase',
-                    color: 'var(--gold-primary)'
-                  }}>
-                    {work.credit}
-                  </span>
-
                   <h3 className="tt" style={{
                     margin: 0,
                     fontFamily: 'var(--font-serif)',

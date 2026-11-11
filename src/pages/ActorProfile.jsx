@@ -59,15 +59,21 @@ export default function ActorProfile({ onOpenVideo, isEmbed: isEmbedProp }) {
         );
       case 'imdb':
         return (
-          <span style={{
-            fontSize: size <= 18 ? '10px' : '11px',
-            fontFamily: 'impact, "Arial Black", sans-serif',
-            fontWeight: 900,
-            letterSpacing: '-0.02em',
-            lineHeight: 1
-          }}>
-            IMDb
-          </span>
+          <svg
+            width={Math.round(size * 1.55)}
+            height={size}
+            viewBox="0 0 32 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <rect x="1" y="1" width="30" height="18" rx="3.5" stroke="currentColor" strokeWidth="1.75" />
+            <path
+              fill="currentColor"
+              fillRule="evenodd"
+              d="M5.5 5.5h1.8v9H5.5v-9zm3 0h2.1l1.1 4.5 1.1-4.5h2.1v9h-1.6V8.2l-1 4.2h-1.2l-1-4.2v6.3H8.5v-9zm7.5 0h2.2c1.5 0 2.5.9 2.5 2.8v3.4c0 1.9-1 2.8-2.5 2.8H16v-9zm1.6 1.6v5.8h.5c.7 0 1-.5 1-1.5V8.1c0-1-.3-1.5-1-1.5h-.5zm4.4-1.6h1.6v3.2c.4-.6 1-.9 1.7-.9 1.3 0 2.1 1 2.1 2.9v1.2c0 1.9-.8 2.9-2.1 2.9-.7 0-1.3-.3-1.7-.9v.7H22v-9.1zm1.6 4.3v2.2c0 .7.3 1 .8 1s.8-.3.8-1V9.8c0-.7-.3-1-.8-1s-.8.3-.8 1z"
+            />
+          </svg>
         );
       default:
         return null;
@@ -298,9 +304,9 @@ export default function ActorProfile({ onOpenVideo, isEmbed: isEmbedProp }) {
               gap: '10px'
             }}>
               {(profile.socialLinks || [
-                { name: 'Instagram', url: 'https://www.instagram.com/reel/ChRUuG2p5Mv/?igshid=YmMyMTA2M2Y=' },
+                { name: 'Instagram', url: 'https://instagram.com/counterpc?igshid=szr5kayi2v6t' },
                 { name: 'YouTube', url: 'https://youtu.be/w55jPICtzK0' },
-                { name: 'Facebook', url: 'https://fb.watch/ndh-AZ6rR4/?mibextid=v7YzmG' },
+                { name: 'Facebook', url: 'https://www.facebook.com/COUNTERPC.QUEEN.OF.WANDS' },
                 { name: 'IMDb', url: 'https://www.imdb.com' }
               ]).map((s, idx) => (
                 <a
