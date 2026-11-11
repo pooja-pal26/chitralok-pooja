@@ -7,8 +7,8 @@ import { siteData } from '../data/content';
  */
 export default function EastDelhiMap() {
   const { brand } = siteData;
-  const fullAddress = '24/3, 24/4 & 24/5, 3rd Floor, Block E, Pandav Nagar, East Delhi – 110092';
-  const mapQuery = encodeURIComponent('24/3, 24/4 & 24/5, Block E, Pandav Nagar, East Delhi, Delhi 110092');
+  const fullAddress = 'Block E, Pandav Nagar, East Delhi – 110092';
+  const mapQuery = encodeURIComponent('Block E, Pandav Nagar, East Delhi, Delhi 110092');
 
   return (
     <section className="eastdelhi-map-section lucknow-map-section" aria-label="Chitralok Studios East Delhi Location Map">
@@ -23,7 +23,6 @@ export default function EastDelhiMap() {
         </div>
         <h3 className="map-badge-title">Chitralok Studios</h3>
         <p className="map-badge-desc">
-          24/3, 24/4 &amp; 24/5, 3rd Floor,<br />
           Block E, Pandav Nagar,<br />
           East Delhi – 110092
         </p>

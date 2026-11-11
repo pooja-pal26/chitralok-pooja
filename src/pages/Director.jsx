@@ -98,7 +98,7 @@ export default function Director({ onOpenVideo }) {
             <span style={{ fontSize: '12px', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--gold-primary)', fontWeight: 600 }}>
               {director.role}
             </span>
-            <span style={{
+            {/* <span style={{
               background: 'rgba(212, 166, 42, 0.1)',
               color: 'var(--gold-hover)',
               border: '1px solid var(--border-gold)',
@@ -109,7 +109,7 @@ export default function Director({ onOpenVideo }) {
               textTransform: 'uppercase'
             }}>
               Paid Palki · Writer &amp; Director
-            </span>
+            </span> */}
 
             {/* Exclusive Minimal IMDb pill — Only placed here on the director profile with authentic small icon */}
             {director.imdbUrl && (

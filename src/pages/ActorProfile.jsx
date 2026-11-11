@@ -23,7 +23,7 @@ export default function ActorProfile({ onOpenVideo, isEmbed: isEmbedProp }) {
     tag: 'Lead Protagonist · Narrative Lead',
     // character: 'Kemli',
     // film: 'Paid Palki',
-    portraitImg: '/assets/images/cast/prragati_chauhaan.webp',
+    portraitImg: '/assets/images/actor.PNG',
     bannerImg: '/assets/images/paid_palki_banner.webp',
     quote: '“Acting is not merely performing; it is a sacred act of stepping into the soul of another human being and defending their truth without judgment.”',
     bio1: 'Prragati Chauhaan is a powerhouse Indian actress, model, and screen narrative architect recognized for her nuanced character immersion, raw emotional gravity, and dedication to socially grounded Indian cinema.',
@@ -131,14 +131,14 @@ export default function ActorProfile({ onOpenVideo, isEmbed: isEmbedProp }) {
           }}>
             ARTIST PROFILE · CHITRALOK STUDIOS
           </span>
-          <span style={{
+          {/* <span style={{
             fontSize: '11px',
             fontFamily: 'var(--font-mono)',
             color: 'var(--text-secondary)',
             letterSpacing: '0.12em'
           }}>
             · MODEL &amp; ACTRESS
-          </span>
+          </span> */}
         </div>
 
         <h1 style={{
@@ -235,7 +235,7 @@ export default function ActorProfile({ onOpenVideo, isEmbed: isEmbedProp }) {
                 textTransform: 'uppercase',
                 color: 'var(--gold-primary)'
               }}>
-                {profile.photoSubtitle || 'Model / Actress'}
+                {/* {profile.photoSubtitle || 'Actress'} */}
               </span>
             </div>
           </div>
@@ -492,105 +492,179 @@ export default function ActorProfile({ onOpenVideo, isEmbed: isEmbedProp }) {
             letterSpacing: '-0.02em',
             color: 'var(--text-primary)'
           }}>
-            Filmography &amp; <span style={{ fontStyle: 'italic', color: 'var(--gold-primary)' }}>Screenplay.</span>
+            Filmography &amp; <span style={{ fontStyle: 'italic', color: 'var(--gold-primary)' }}>Works.</span>
           </h2>
         </div>
 
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))',
-          gap: '28px'
-        }}>
-          {profile.filmography && profile.filmography.map((film, idx) => (
-            <div
-              key={idx}
-              style={{
-                background: 'rgba(14, 13, 11, 0.75)',
-                border: '1px solid var(--border-subtle)',
-                borderRadius: '2px',
-                overflow: 'hidden',
-                display: 'flex',
-                flexDirection: 'column',
-                transition: 'all 0.3s ease'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = 'rgba(212, 166, 42, 0.55)';
-                e.currentTarget.style.transform = 'translateY(-4px)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = 'var(--border-subtle)';
-                e.currentTarget.style.transform = 'translateY(0)';
-              }}
-            >
-              <div style={{
-                position: 'relative',
-                aspectRatio: '16/9',
-                overflow: 'hidden',
-                background: 'var(--bg-card)'
-              }}>
-                <img
-                  src={film.img}
-                  alt={film.title}
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover'
-                  }}
-                />
-                <div style={{
-                  position: 'absolute',
-                  inset: 0,
-                  background: 'linear-gradient(180deg, transparent 40%, rgba(7, 7, 7, 0.9) 100%)',
-                  pointerEvents: 'none'
-                }} />
-                <span style={{
-                  position: 'absolute',
-                  top: '12px',
-                  left: '12px',
-                  fontFamily: 'var(--font-mono)',
-                  fontSize: '10px',
-                  letterSpacing: '0.14em',
-                  textTransform: 'uppercase',
-                  color: 'var(--gold-primary)',
-                  background: 'rgba(7, 7, 7, 0.88)',
-                  padding: '4px 10px',
-                  border: '1px solid var(--border-gold)',
-                  borderRadius: '2px'
-                }}>
-                  {film.year}
-                </span>
-              </div>
+        <div className="actor-filmography-grid">
+          {profile.filmography && profile.filmography.map((film, idx) => {
+            const hasVideo = !!film.videoUrl;
+            const hasLink = !!film.externalUrl;
+            const isInstagram = film.externalUrl && film.externalUrl.includes('instagram.com');
 
-              <div style={{ padding: '24px 20px', display: 'flex', flexDirection: 'column', gap: '8px', flex: 1 }}>
-                <span style={{
-                  fontFamily: 'var(--font-mono)',
-                  fontSize: '11px',
-                  letterSpacing: '0.12em',
-                  textTransform: 'uppercase',
-                  color: 'var(--gold-primary)'
+            const handlePlay = (e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              if (hasVideo && onOpenVideo) {
+                onOpenVideo(film.videoUrl, film.title);
+              } else if (hasLink) {
+                window.open(film.externalUrl, '_blank', 'noopener,noreferrer');
+              }
+            };
+
+            return (
+              <div
+                key={idx}
+                onClick={handlePlay}
+                style={{
+                  background: 'rgba(14, 13, 11, 0.75)',
+                  border: '1px solid var(--border-subtle)',
+                  borderRadius: '2px',
+                  overflow: 'hidden',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  transition: 'all 0.3s ease',
+                  cursor: (hasVideo || hasLink) ? 'pointer' : 'default'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = 'rgba(212, 166, 42, 0.55)';
+                  e.currentTarget.style.transform = 'translateY(-4px)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = 'var(--border-subtle)';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                }}
+              >
+                <div style={{
+                  position: 'relative',
+                  aspectRatio: '16/9',
+                  overflow: 'hidden',
+                  background: 'var(--bg-card)'
                 }}>
-                  {film.role}
-                </span>
-                <h3 style={{
-                  margin: 0,
-                  fontFamily: 'var(--font-serif)',
-                  fontSize: '22px',
-                  fontWeight: 600,
-                  color: 'var(--text-primary)'
-                }}>
-                  {film.title}
-                </h3>
-                <p style={{
-                  margin: '4px 0 0',
-                  fontSize: '14px',
-                  lineHeight: 1.6,
-                  color: 'var(--text-light-sub)'
-                }}>
-                  {film.desc}
-                </p>
+                  <img
+                    src={film.img}
+                    alt={film.title}
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover'
+                    }}
+                  />
+                  <div style={{
+                    position: 'absolute',
+                    inset: 0,
+                    background: 'linear-gradient(180deg, transparent 40%, rgba(7, 7, 7, 0.9) 100%)',
+                    pointerEvents: 'none'
+                  }} />
+                  <span style={{
+                    position: 'absolute',
+                    top: '12px',
+                    left: '12px',
+                    fontFamily: 'var(--font-mono)',
+                    fontSize: '10px',
+                    letterSpacing: '0.14em',
+                    textTransform: 'uppercase',
+                    color: 'var(--gold-primary)',
+                    background: 'rgba(7, 7, 7, 0.88)',
+                    padding: '4px 10px',
+                    border: '1px solid var(--border-gold)',
+                    borderRadius: '2px'
+                  }}>
+                    {film.year}
+                  </span>
+
+                  {(hasVideo || hasLink) && (
+                    <button
+                      type="button"
+                      onClick={handlePlay}
+                      aria-label={`Play ${film.title}`}
+                      style={{
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        width: '46px',
+                        height: '46px',
+                        borderRadius: '50%',
+                        background: 'rgba(7, 7, 7, 0.78)',
+                        border: '1.5px solid var(--gold-primary)',
+                        color: 'var(--gold-primary)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        cursor: 'pointer',
+                        transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
+                        zIndex: 2,
+                        boxShadow: '0 4px 16px rgba(0, 0, 0, 0.5)'
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.background = 'var(--gold-primary)';
+                        e.currentTarget.style.color = '#070707';
+                        e.currentTarget.style.transform = 'translate(-50%, -50%) scale(1.1)';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.background = 'rgba(7, 7, 7, 0.78)';
+                        e.currentTarget.style.color = 'var(--gold-primary)';
+                        e.currentTarget.style.transform = 'translate(-50%, -50%) scale(1)';
+                      }}
+                    >
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style={{ marginLeft: '2px' }}>
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                      </svg>
+                    </button>
+                  )}
+                </div>
+
+                <div style={{ padding: '18px 16px', display: 'flex', flexDirection: 'column', gap: '8px', flex: 1 }}>
+                  <span style={{
+                    fontFamily: 'var(--font-mono)',
+                    fontSize: '11px',
+                    letterSpacing: '0.12em',
+                    textTransform: 'uppercase',
+                    color: 'var(--gold-primary)'
+                  }}>
+                    {film.role}
+                  </span>
+                  <h3 style={{
+                    margin: 0,
+                    fontFamily: 'var(--font-serif)',
+                    fontSize: '18px',
+                    fontWeight: 600,
+                    lineHeight: 1.3,
+                    color: 'var(--text-primary)'
+                  }}>
+                    {film.title}
+                  </h3>
+                  <p style={{
+                    margin: '4px 0 0',
+                    fontSize: '13px',
+                    lineHeight: 1.55,
+                    color: 'var(--text-light-sub)'
+                  }}>
+                    {film.desc}
+                  </p>
+
+                  {(hasVideo || hasLink) && (
+                    <div style={{ marginTop: 'auto', paddingTop: '14px' }}>
+                      <span style={{
+                        fontFamily: 'var(--font-mono)',
+                        fontSize: '11px',
+                        letterSpacing: '0.14em',
+                        textTransform: 'uppercase',
+                        color: 'var(--gold-primary)',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '6px',
+                        transition: 'opacity 0.2s ease'
+                      }}>
+                        {isInstagram ? 'Watch Reel' : 'Watch Video'} →
+                      </span>
+                    </div>
+                  )}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
@@ -603,104 +677,11 @@ export default function ActorProfile({ onOpenVideo, isEmbed: isEmbedProp }) {
       </section>
 
       {/* Production Stills & Behind-The-Scenes Frames */}
-      <section style={{
+      {/* <section style={{
         padding: '56px clamp(16px, 4vw, 48px) 72px',
         borderTop: '1px solid var(--border-subtle)'
       }}>
-        <div style={{ marginBottom: '32px' }}>
-          <span style={{
-            fontFamily: 'var(--font-mono)',
-            fontSize: '11px',
-            letterSpacing: '0.22em',
-            textTransform: 'uppercase',
-            color: 'var(--gold-primary)',
-            fontWeight: 600,
-            display: 'block',
-            marginBottom: '8px'
-          }}>
-            SET ACTION &amp; PRODUCTION FRAMES
-          </span>
-          <h2 style={{
-            margin: 0,
-            fontFamily: 'var(--font-heading)',
-            fontSize: 'clamp(28px, 4vw, 48px)',
-            fontWeight: 700,
-            letterSpacing: '-0.02em',
-            color: 'var(--text-primary)'
-          }}>
-            Behind The Scenes With <span style={{ fontStyle: 'italic', color: 'var(--gold-primary)' }}>Prragati.</span>
-          </h2>
-        </div>
-
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 250px), 1fr))',
-          gap: '24px'
-        }}>
-          {profile.stills && profile.stills.map((still, idx) => (
-            <div
-              key={idx}
-              style={{
-                position: 'relative',
-                aspectRatio: '4/3',
-                background: 'var(--bg-card)',
-                border: '1px solid var(--border-subtle)',
-                borderRadius: '2px',
-                overflow: 'hidden'
-              }}
-            >
-              <img
-                src={still.img}
-                alt={still.title}
-                loading="lazy"
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover',
-                  transition: 'transform 0.5s ease'
-                }}
-                onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.06)'}
-                onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
-              />
-              <div style={{
-                position: 'absolute',
-                inset: 0,
-                background: 'linear-gradient(180deg, transparent 50%, rgba(7, 7, 7, 0.88) 100%)',
-                pointerEvents: 'none'
-              }} />
-              <div style={{
-                position: 'absolute',
-                bottom: '12px',
-                left: '12px',
-                right: '12px',
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '2px'
-              }}>
-                <span style={{
-                  fontFamily: 'var(--font-mono)',
-                  fontSize: '10px',
-                  letterSpacing: '0.14em',
-                  textTransform: 'uppercase',
-                  color: 'var(--gold-primary)'
-                }}>
-                  {still.tag}
-                </span>
-                <span style={{
-                  fontFamily: 'var(--font-serif)',
-                  fontSize: '14px',
-                  color: '#FFFFFF',
-                  whiteSpace: 'nowrap',
-                  overflow: 'hidden',
-                  textOverflow: 'ellipsis'
-                }}>
-                  {still.title}
-                </span>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      </section> */}
 
       {/* Footer / CTA Section */}
       {!isEmbed ? (

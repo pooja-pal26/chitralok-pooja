@@ -2702,3 +2702,24 @@ button {
   }
 }
 
+/* Actor Filmography Grid: 4 items in a single row on desktop, 2 on tablet, 1 on mobile */
+.actor-filmography-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 1100px) {
+  .actor-filmography-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .actor-filmography-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+

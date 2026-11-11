@@ -18,7 +18,7 @@ export default function DirectorSpotlight({ onOpenVideo }) {
           <div className="director-spotlight-media">
             <img
               src={director.img || director.portraitImg}
-              alt="Pushpendra Singh — Television & Film Director"
+              // alt="Pushpendra Singh — Television & Film Director"
               className="director-spotlight-img"
               loading="lazy"
             />

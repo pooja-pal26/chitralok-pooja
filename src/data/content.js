@@ -27,7 +27,7 @@ export const siteData = {
     },
     socials: [
       { name: 'Instagram', url: 'https://www.instagram.com/chitralokstudios.sp/' },
-      { name: 'YouTube', url: 'https://youtube.com' },
+      { name: 'YouTube', url: 'https://www.youtube.com/watch?v=jg-aCXizXzo' },
       { name: 'Facebook', url: 'https://www.facebook.com/people/ChitralokStudios/61596235132778/' },
       { name: 'IMDb', url: 'https://www.imdb.com/name/nm9362954/' }
     ]
@@ -39,18 +39,18 @@ export const siteData = {
     headlineMain: 'people',
     headlineAccent: 'remember.',
     manifesto: 'We ideate, produce, collaborate, engage and deliver best-in-class audiovisuals for cinema, OTT and global brands.',
-    bgImage: '/assets/images/Paid Palki_ A Rural Love Story.png',
+    bgImage: '/assets/images/Paid Palki_ A Rural Love Story journey.png',
     slides: [
       {
         id: 1,
-        bgImage: '/assets/images/Paid Palki_ A Rural Love Story.png',
-        posterImg: '/assets/images/paid_palki_poster.webp',
+        bgImage: '/assets/images/Paid Palki_ A Rural Love Story journey.png',
+        posterImg: '/assets/images/Paid Palki_ A Rural Love Story journey.png',
         subTag: 'Feature Film · In Filming'
       },
       {
         id: 2,
         bgImage: '/assets/images/Aaoge Jab Tum_ Musical Sunset Romance (1).png',
-        posterImg: '/assets/images/aaoge_jab_tum_poster.webp',
+        posterImg: '/assets/images/Aaoge Jab Tum_ Musical Sunset Romance (1).png',
         subTag: 'Theatrical Release · Post Production'
       }
     ],
@@ -69,15 +69,15 @@ export const siteData = {
     {
       id: 1,
       name: 'Pushpendra Singh',
-      tag: 'Indian Television & Film Director',
-      role: 'Television & Film Director',
+      // tag: 'Indian Television & Film Director',
+      // role: 'Television & Film Director',
       badge: 'Writer & Director · Paid Palki & Iconic Indian TV Classics',
       img: '/assets/images/pushpenddra_singh.webp',
       path: '/director',
       dob: '15 September 1981',
       specialty: 'High-Impact Television Drama, Social Realism & Epic Narratives',
       summary: 'Pushpendra Singh is an Indian Television and Film Director. He began his career as an associate director on Kyaa Hoga Nimmo Kaa and worked as second director on Ram Gopal Varma\'s landmark Bollywood film Sarkar (2005), before directing some of the most historic television series in Indian broadcasting history and acclaimed feature films like Paid Palki and Aaoge Jab Tum.',
-      featureFilm: 'Paid Palki & Aaoge Jab Tum',
+      // featureFilm: 'Paid Palki & Aaoge Jab Tum',
       imdbUrl: 'https://www.imdb.com/name/nm9362954/',
       notableWorks: [
         'Sarkar (2005 Movie — Second Director)',
@@ -100,17 +100,18 @@ export const siteData = {
     {
       id: 1,
       title: 'Paid Palki',
-      posterImg: '/assets/images/paid_palki_poster.webp',
+      posterImg: '/assets/images/Paid Palki_ A Rural Love Story journey.png',
       client: 'S&P Chitralok Studios',
       credit: 'Writer & Dir. Pushpenddra Singh',
       cat: 'Film',
       year: 'In Filming',
       status: 'In Filming',
-      img: '/assets/images/Paid Palki_ A Rural Love Story.png'
+      img: '/assets/images/Paid Palki_ A Rural Love Story journey.png'
     },
     {
       id: 2,
       title: 'Aaoge Jab Tum — Feature Film',
+      posterImg: '/assets/images/Aaoge Jab Tum_ Musical Sunset Romance (1).png',
       client: 'Little Crew Pictures',
       credit: 'Dir. Pushpenddra Singh',
       cat: 'Film',
@@ -165,7 +166,7 @@ export const siteData = {
       id: 2,
       cat: 'Film',
       title: 'Aaoge Jab Tum',
-      posterImg: '/assets/images/aaoge_jab_tum_poster.webp',
+      posterImg: '/assets/images/Aaoge Jab Tum_ Musical Sunset Romance (1).png',
       client: 'Little Crew Pictures',
       credit: 'Writer & Dir. Pushpenddra Singh',
       year: 'Post Production',
@@ -199,7 +200,7 @@ export const siteData = {
       id: 1,
       cat: 'Film',
       title: 'Paid Palki',
-      posterImg: '/assets/images/paid_palki_poster.webp',
+      posterImg: '/assets/images/Paid Palki_ A Rural Love Story journey.png',
       client: 'S&P Chitralok Studios',
       credit: 'Writer & Dir. Pushpenddra Singh',
       year: 'In Filming',
@@ -212,8 +213,8 @@ export const siteData = {
       screenplay: 'Pushpendrra Singh & Prragati Chauhaan',
       dialogues: 'Shashank Singh',
       dop: 'Shashank Sahu',
-      img: '/assets/images/Paid Palki_ A Rural Love Story.png',
-      bannerImg: '/assets/images/Paid Palki_ A Rural Love Story.png',
+      img: '/assets/images/Paid Palki_ A Rural Love Story journey.png',
+      bannerImg: '/assets/images/Paid Palki_ A Rural Love Story journey.png',
       synopsis: 'Set in the heart of rural Madhya Pradesh, Santu, an unmarried young man facing societal pressure, is persuaded to buy a bride from a remote tribal settlement. Captivated by Kemli, a sheltered tribal girl, he brings her home where genuine affection blossoms between them. But when Kemli’s family forcibly takes her back, Santu embarks on an emotional struggle to reunite with the woman he loves—a powerful story of love emerging from exploitation and the courage to challenge human trafficking.',
       stills: [
         { img: '/assets/images/paid_palki_poster.webp', title: 'Official Theatrical 1-Sheet Poster', tag: 'Theatrical Art' },
@@ -820,11 +821,11 @@ export const siteData = {
     directors: [
       {
         name: 'Pushpendra Singh',
-        role: 'Director',
-        subtitle: 'Television & Film Director',
+        // role: 'Director',
+        // subtitle: 'Television & Film Director',
         tag: 'Lead Director',
         img: '/assets/images/pushpenddra_singh.webp',
-        credit: 'Paid Palki · Aaoge Jab Tum · Sarkar (2005) · Prime-Time Epics',
+        // credit: 'Paid Palki · Aaoge Jab Tum · Sarkar (2005) · Prime-Time Epics',
         vision: 'Stories on screen become part of the collective consciousness when told with truth, human vulnerability, and unwavering cinematic craft.',
         path: '/director'
       }
@@ -832,22 +833,19 @@ export const siteData = {
     writers: [
       {
         name: 'Pushpendra Singh',
-        role: 'Writer',
-        subtitle: 'Writer & Director · Story & Screenplay',
-        tag: 'Narrative Architect',
+        // role: 'Writer',
+        // subtitle: 'Writer & Director · Story & Screenplay',
+        // tag: 'Narrative Architect',
         img: '/assets/images/pushpenddra_singh.webp',
-        credit: 'Aaoge Jab Tum (2026) · Sarkar · Television Epics',
+        // credit: 'Aaoge Jab Tum (2026) · Sarkar · Television Epics',
         vision: 'Architect of high-stakes social realism and emotional narratives that bridge classic Indian literature with commercial cinema.',
         detailsPath: '/director',
         path: '/director'
       },
       {
         name: 'Prragati Chauhaan',
-        role: 'Writer',
-        subtitle: 'Screenplay & Narrative Lead',
-        tag: 'Character & Emotional Arcs',
-        img: '/assets/images/cast/prragati_chauhaan.webp',
-        credit: 'Original Screenplays, Character Arcs & Dialogues',
+        img: '/assets/images/pp.jpeg',
+       
         vision: 'Cinema is the ultimate conduit of empathy. Breathing life into complex characters and shaping narratives from page to screen is our true calling.',
         detailsPath: '/actor/prragati-chauhaan',
         path: '/actor/prragati-chauhaan'
@@ -856,12 +854,9 @@ export const siteData = {
     actors: [
       {
         name: 'Prragati Chauhaan',
-        role: 'Actor',
-        subtitle: 'Model / Actress',
         tag: 'Lead Protagonist',
-        // character: 'Kemli',
         img: '/assets/images/actress.jpg',
-        credit: 'Commercial Ads, Print Campaigns & Fashion Modeling',
+        // credit: 'Commercial Ads, Print Campaigns & Fashion Modeling',
         vision: 'Acting is not merely performing; it is a sacred act of stepping into the soul of another human being and defending their truth without judgment.',
         notes: 'A sheltered tribal girl who transforms into a determined woman fighting for her dignity.',
         detailsPath: '/actor/prragati-chauhaan',
@@ -879,7 +874,7 @@ export const siteData = {
     nameFirst: 'Pushpendra',
     nameLast: 'Singh',
     // born: '15 September 1981',
-    role: 'Television & Film Director',
+    // role: 'Television & Film Director',
     portraitImg: '/assets/images/pushpenddra_singh.webp',
     reelImg: '/assets/images/paid_palki_banner.webp',
     imdbUrl: 'https://www.imdb.com/name/nm9362954/',
@@ -894,7 +889,7 @@ export const siteData = {
         kind: 'Feature Film (Director)',
         network: 'Theatrical Release',
         role: 'Director',
-        img: '/assets/images/aaoge_jab_tum_poster.webp'
+        img: '/assets/images/Aaoge Jab Tum_ Musical Sunset Romance (1).png'
       },
       {
         year: 'In Filming',
@@ -902,7 +897,7 @@ export const siteData = {
         kind: 'Feature Film (Writer & Director)',
         network: 'S&P Chitralok Studios',
         role: 'Writer & Director',
-        img: '/assets/images/paid_palki_poster.webp'
+        img: '/assets/images/Paid Palki_ A Rural Love Story journey.png'
       },
       {
         year: '2005',
@@ -1017,12 +1012,12 @@ export const siteData = {
   prragatiProfile: {
     nameFirst: 'Prragati',
     nameLast: 'Chauhaan',
-    role: 'Model / Actress',
-    photoSubtitle: 'Model / Actress',
+    // role: 'Model / Actress',
+    photoSubtitle: 'Actress',
     tag: 'Professional Model & Actress',
     character: 'Kemli',
     film: 'Paid Palki',
-    portraitImg: '/assets/images/cast/prragati_chauhaan.webp',
+    portraitImg: '/assets/images/actor.PNG',
     bannerImg: '/assets/images/paid_palki_banner.webp',
     stillImg: '/assets/images/bts/bts_clip_01_set_action_poster.webp',
     imdbUrl: 'https://www.imdb.com',
@@ -1038,24 +1033,47 @@ export const siteData = {
     bio3: 'As a creative pillar and narrative lead at Chitralok Studios, Prragati champions fearless storytelling that reflects the complexities of contemporary and rural India, striving to create cinematic art that lingers in the hearts of audiences worldwide.',
     filmography: [
       {
-        year: 'In Filming / 2026',
-        title: 'Paid Palki',
-        kind: 'Feature Film (Lead Actor & Screenplay)',
-        character: 'Kemli (Lead Protagonist)',
-        studio: 'S&P Chitralok Studios',
-        role: 'Lead Actress & Screenplay Co-Writer',
-        img: '/assets/images/paid_palki_poster.webp',
-        desc: 'A poignant and gripping rural social drama capturing the clash between social vulnerability, love, and personal liberation.'
+        year: 'Purani Dili Talkies',
+        title: 'Woman Judges A Girl For Being A Single Mother',
+        channel: 'Purani Dili Talkies',
+        kind: 'Social Drama · Short Film',
+        role: 'Purani Dili Talkies',
+        img: '/assets/images/pdt.png',
+        desc: 'A social drama exploring prejudice, motherhood, and emotional strength.',
+        videoUrl: 'https://www.youtube-nocookie.com/embed/w55jPICtzK0?autoplay=1',
+        externalUrl: 'https://www.youtube.com/watch?v=w55jPICtzK0'
       },
       {
-        year: 'Screenplay & Narrative Lead',
-        title: 'Narrative Architecture & Screenplay Development',
-        kind: 'Screenplay & Character Lead',
-        character: 'Screenplay Co-Writer',
-        studio: 'Chitralok Studios Roster',
-        role: 'Screenwriter & Narrative Designer',
-        img: '/assets/images/bts/bts_director_actor_blocking.webp',
-        desc: 'Developing culturally rooted scripts, multi-dimensional female arcs, and impactful dialogue rhythm across studio productions.'
+        year: 'Rohit R Gaba',
+        title: 'Social Awareness & Moral Story',
+        channel: 'Rohit R Gaba',
+        kind: 'Social Awareness · Short Film',
+        role: 'Rohit R Gaba',
+        img: '/assets/images/rohitgaba.png',
+        desc: 'Social awareness short film exploring relationships, integrity, and real-life values.',
+        videoUrl: 'https://www.youtube-nocookie.com/embed/kUddWfYdcz0?autoplay=1',
+        externalUrl: 'https://www.youtube.com/watch?v=kUddWfYdcz0'
+      },
+      {
+        year: 'CARS24',
+        title: 'CARS24 Digital Commercial',
+        channel: 'CARS24',
+        kind: 'Commercial · Digital Ad',
+        role: 'CARS24',
+        img: '/assets/images/cars24.png',
+        desc: 'Commercial advertisement and digital brand campaign for CARS24.',
+        externalUrl: 'https://www.instagram.com/reel/ChRUuG2p5Mv/?igshid=YmMyMTA2M2Y%3D'
+      },
+      {
+        year: 'Nijo Jonson',
+        title: "Girl Secretly Helps A Rickshaw Driver's Daughter",
+        channel: 'Nijo Jonson',
+        kind: 'Social Drama · Short Film',
+        role: 'Nijo Jonson',
+        img: '/assets/images/nijo.png',
+        desc: 'An inspiring short drama of compassion, empathy, and silent empowerment.',
+        videoUrl: 'https://www.youtube-nocookie.com/embed/Atv7iXHF_4Q?autoplay=1',
+        externalUrl: 'https://www.youtube.com/watch?v=Atv7iXHF_4Q'
       }
     ],
     stills: [

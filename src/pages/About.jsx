@@ -262,22 +262,6 @@ export default function About() {
                     background: 'linear-gradient(180deg, rgba(7,7,7,0.1) 0%, rgba(7,7,7,0.3) 50%, rgba(7,7,7,0.92) 100%)',
                     pointerEvents: 'none'
                   }} />
-                  <span style={{
-                    position: 'absolute',
-                    top: '12px',
-                    left: '12px',
-                    fontFamily: 'var(--font-mono)',
-                    fontSize: '10px',
-                    letterSpacing: '0.15em',
-                    textTransform: 'uppercase',
-                    color: 'var(--gold-primary)',
-                    background: 'rgba(7, 7, 7, 0.88)',
-                    padding: '4px 10px',
-                    border: '1px solid var(--border-gold)',
-                    borderRadius: '2px'
-                  }}>
-                    {producer.role}
-                  </span>
                 </div>
 
                 {/* Card Details */}
@@ -364,22 +348,6 @@ export default function About() {
                     background: 'linear-gradient(180deg, rgba(7,7,7,0.1) 0%, rgba(7,7,7,0.3) 50%, rgba(7,7,7,0.92) 100%)',
                     pointerEvents: 'none'
                   }} />
-                  <span style={{
-                    position: 'absolute',
-                    top: '12px',
-                    left: '12px',
-                    fontFamily: 'var(--font-mono)',
-                    fontSize: '10px',
-                    letterSpacing: '0.15em',
-                    textTransform: 'uppercase',
-                    color: 'var(--gold-primary)',
-                    background: 'rgba(7, 7, 7, 0.88)',
-                    padding: '4px 10px',
-                    border: '1px solid var(--border-gold)',
-                    borderRadius: '2px'
-                  }}>
-                    {director.tag || director.role}
-                  </span>
                 </div>
 
                 <div style={{ padding: '20px 18px', display: 'flex', flexDirection: 'column', gap: '8px', flex: 1 }}>
@@ -413,7 +381,7 @@ export default function About() {
                         fontWeight: 600
                       }}
                     >
-                      View Director Archive →
+                      View Archive →
                     </Link>
                   )}
                 </div>
@@ -428,9 +396,6 @@ export default function About() {
             <span style={{ fontSize: '12px', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--gold-primary)', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '10px' }}>
               <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--gold-primary)' }} />
               03 · WRITERS
-            </span>
-            <span style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', color: 'var(--text-secondary)', letterSpacing: '0.12em' }}>
-              Screenplay, Dialogue &amp; Narrative Architecture
             </span>
           </div>
 
@@ -489,22 +454,6 @@ export default function About() {
                     background: 'linear-gradient(180deg, rgba(7,7,7,0.1) 0%, rgba(7,7,7,0.3) 50%, rgba(7,7,7,0.92) 100%)',
                     pointerEvents: 'none'
                   }} />
-                  <span style={{
-                    position: 'absolute',
-                    top: '12px',
-                    left: '12px',
-                    fontFamily: 'var(--font-mono)',
-                    fontSize: '10px',
-                    letterSpacing: '0.15em',
-                    textTransform: 'uppercase',
-                    color: 'var(--gold-primary)',
-                    background: 'rgba(7, 7, 7, 0.88)',
-                    padding: '4px 10px',
-                    border: '1px solid var(--border-gold)',
-                    borderRadius: '2px'
-                  }}>
-                    {writer.tag || writer.role}
-                  </span>
                 </div>
 
                 <div style={{ padding: '20px 18px', display: 'flex', flexDirection: 'column', gap: '8px', flex: 1 }}>
@@ -632,44 +581,6 @@ export default function About() {
                     background: 'linear-gradient(180deg, rgba(7,7,7,0.1) 0%, rgba(7,7,7,0.3) 50%, rgba(7,7,7,0.92) 100%)',
                     pointerEvents: 'none'
                   }} />
-                  <span style={{
-                    position: 'absolute',
-                    top: '12px',
-                    left: '12px',
-                    fontFamily: 'var(--font-mono)',
-                    fontSize: '10px',
-                    letterSpacing: '0.15em',
-                    textTransform: 'uppercase',
-                    color: 'var(--gold-primary)',
-                    background: 'rgba(7, 7, 7, 0.88)',
-                    padding: '4px 10px',
-                    border: '1px solid var(--border-gold)',
-                    borderRadius: '2px'
-                  }}>
-                    {actor.role}
-                  </span>
-                  {actor.character && (
-                    <span style={{
-                      position: 'absolute',
-                      bottom: '12px',
-                      left: '12px',
-                      right: '12px',
-                      fontFamily: 'var(--font-mono)',
-                      fontSize: '11px',
-                      letterSpacing: '0.1em',
-                      textTransform: 'uppercase',
-                      color: 'var(--gold-primary)',
-                      background: 'rgba(10, 10, 9, 0.85)',
-                      padding: '4px 8px',
-                      borderRadius: '2px',
-                      border: '1px solid rgba(212, 166, 42, 0.35)',
-                      whiteSpace: 'nowrap',
-                      overflow: 'hidden',
-                      textOverflow: 'ellipsis'
-                    }}>
-                      as {actor.character}
-                    </span>
-                  )}
                 </div>
 
                 <div style={{ padding: '20px 18px', display: 'flex', flexDirection: 'column', gap: '8px', flex: 1 }}>
@@ -688,57 +599,6 @@ export default function About() {
                     <p style={{ margin: '4px 0 0', fontSize: '12px', lineHeight: 1.6, color: 'var(--text-light-sub)', fontStyle: 'italic' }}>
                       {actor.vision || actor.notes}
                     </p>
-                  )}
-                                    {/* Actor Social Profiles */}
-                  {actor.socialLinks && actor.socialLinks.length > 0 && (
-                    <div style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '8px',
-                      marginTop: '10px',
-                      marginBottom: '6px'
-                    }}>
-                      {actor.socialLinks.map((s, sIdx) => (
-                        <a
-                          key={sIdx}
-                          href={s.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          aria-label={`${actor.name} on ${s.name}`}
-                          title={`${s.name} (Opens in a new tab)`}
-                          style={{
-                            width: '36px',
-                            height: '36px',
-                            display: 'inline-flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            borderRadius: '2px',
-                            border: '1px solid rgba(212, 166, 42, 0.35)',
-                            background: 'rgba(255, 255, 255, 0.03)',
-                            color: 'var(--gold-primary)',
-                            textDecoration: 'none',
-                            transition: 'all 0.2s cubic-bezier(0.16, 1, 0.3, 1)',
-                            cursor: 'pointer'
-                          }}
-                          onMouseEnter={(e) => {
-                            e.currentTarget.style.background = 'var(--gold-primary)';
-                            e.currentTarget.style.color = '#070707';
-                            e.currentTarget.style.borderColor = 'var(--gold-primary)';
-                            e.currentTarget.style.transform = 'translateY(-2px)';
-                            e.currentTarget.style.boxShadow = '0 4px 12px rgba(212, 166, 42, 0.3)';
-                          }}
-                          onMouseLeave={(e) => {
-                            e.currentTarget.style.background = 'rgba(255, 255, 255, 0.03)';
-                            e.currentTarget.style.color = 'var(--gold-primary)';
-                            e.currentTarget.style.borderColor = 'rgba(212, 166, 42, 0.35)';
-                            e.currentTarget.style.transform = 'translateY(0)';
-                            e.currentTarget.style.boxShadow = 'none';
-                          }}
-                        >
-                          {renderSocialIcon(s.name, 16)}
-                        </a>
-                      ))}
-                    </div>
                   )}
                   <Link
                     to={actor.detailsPath || '/actor/prragati-chauhaan'}
