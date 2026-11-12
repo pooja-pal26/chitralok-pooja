@@ -396,7 +396,7 @@ export const siteData = {
       cat: 'Series',
       title: 'Shakuntala',
       videoUrl: 'https://www.youtube-nocookie.com/embed/5xDr-aE6lmk?autoplay=1',
-      posterImg: '/assets/images/shakuntala.webp',
+      posterImg: '/assets/images/shakuntala1.jpg',
       client: 'STAR One / Sagar Arts',
       credit: 'Dir. Pushpendra Singh',
       year: '2009',
@@ -404,11 +404,11 @@ export const siteData = {
       director: 'Pushpendra Singh',
       studio: 'STAR One & Sagar Arts',
       milestone: 'Opulent Kalidasa Sanskrit Classic Adaptation',
-      img: '/assets/images/shakuntala.webp',
-      bannerImg: '/assets/images/shakuntala.webp',
+      img: '/assets/images/shakuntala1.jpg',
+      bannerImg: '/assets/images/shakuntala1.jpg',
       synopsis: 'A grand visual adaptation of Kalidasa classical Sanskrit masterpiece Abhijnanasakuntalam, narrating the fated love, curse-driven separation, and royal reunion of King Dushyanta and forest maiden Shakuntala.',
       stills: [
-        { img: '/assets/images/shakuntala.webp', title: 'Princess Shakuntala in Ancient Forest Sanctuary', tag: '1280x720 HD Master' },
+        { img: '/assets/images/shakuntala1.jpg', title: 'Princess Shakuntala in Ancient Forest Sanctuary', tag: '1280x720 HD Master' },
         { img: '/assets/images/bts_camera_rig.webp', title: 'Sagar Arts Mythological Exterior Lighting Rig', tag: 'Camera Rig' }
       ],
       cast: [
@@ -490,12 +490,12 @@ export const siteData = {
       director: 'Pushpendra Singh',
       studio: 'Sony TV & Balaji Telefilms',
       milestone: 'Prime Time Sony TV Romantic Comedy',
-      posterImg: '/assets/images/kuchh_is_tara.webp?v=2',
-      img: '/assets/images/kuchh_is_tara.webp?v=2',
-      bannerImg: '/assets/images/kuchh_is_tara.webp?v=2',
+      posterImg: '/assets/images/kuch is trh.png',
+      img: '/assets/images/kuch is trh.png',
+      bannerImg: '/assets/images/kuch is trh.png',
       synopsis: 'A witty, lighthearted romantic comedy chronicling Kanya Godbole, an optimistic girl living with a split identity condition who finds herself in a whirlwind contract marriage within the elite Nanda business empire.',
       stills: [
-        { img: '/assets/images/kuchh_is_tara.webp', title: 'Kanya Godbole & Ranbir Nanda Wedding Sequence', tag: '1280x720 HD Broadcast' },
+        { img: '/assets/images/kuch is trh.png', title: 'Kanya Godbole & Ranbir Nanda Wedding Sequence', tag: '1280x720 HD Broadcast' },
         { img: '/assets/images/bts_rehearsal.webp', title: 'Studio Rehearsal & Comic Timing Session', tag: 'Rehearsal' }
       ],
       cast: [
@@ -921,7 +921,7 @@ export const siteData = {
         kind: 'Television Series',
         network: 'Sony Entertainment TV / Balaji',
         role: 'Director',
-        img: '/assets/images/kuchh_is_tara.webp?v=2'
+        img: '/assets/images/kuch is trh.png'
       },
       {
         year: '2009',
@@ -937,7 +937,7 @@ export const siteData = {
         kind: 'Mythological Romance',
         network: 'STAR One / Sagar Arts',
         role: 'Director',
-        img: '/assets/images/shakuntala.webp'
+        img: '/assets/images/shakuntala1.jpg'
       },
       {
         year: '2008–2009',
