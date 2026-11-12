@@ -332,7 +332,7 @@ export default function Home({ onOpenVideo }) {
             borderTop: '1px solid var(--border-medium)',
             paddingTop: '28px'
           }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '8px 32px' }}>
               <Link
                 to="/contact"
                 className="ul"
@@ -344,10 +344,11 @@ export default function Home({ onOpenVideo }) {
                   letterSpacing: '0.2em',
                   textTransform: 'uppercase',
                   fontWeight: 600,
-                  color: 'var(--gold-primary)'
+                  color: 'var(--gold-primary)',
+                  whiteSpace: 'nowrap'
                 }}
               >
-                Get in touch ↓
+                Get in touch →
               </Link>
               <Link
                 to="/work"
@@ -359,7 +360,8 @@ export default function Home({ onOpenVideo }) {
                   fontSize: '12px',
                   letterSpacing: '0.2em',
                   textTransform: 'uppercase',
-                  fontWeight: 600
+                  fontWeight: 600,
+                  whiteSpace: 'nowrap'
                 }}
               >
                 View Selected Projects →

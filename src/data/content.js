@@ -136,7 +136,7 @@ export const siteData = {
       credit: 'Dir. Pushpendra Singh',
       cat: 'Series',
       year: '2000-2008',
-      img: '/assets/images/kyunki_saas_bhi_kabhi_bahu_thi.webp',
+      img: '/assets/images/kuki sas bhi kbt.avif',
       videoUrl: 'https://www.youtube-nocookie.com/embed/09UKQGoH2Uk?autoplay=1'
     },
     {

@@ -2723,3 +2723,364 @@ button {
   }
 }
 
+/* ==========================================================================
+   About Page — Responsive Layout & Visionary Cards
+   ========================================================================== */
+.about-page {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.about-hero-section {
+  padding: 120px var(--container-pad) 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.about-hero-title {
+  margin: 0;
+  max-width: 1180px;
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(32px, 6.6vw, 108px);
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+  overflow-wrap: break-word;
+}
+
+.about-banner-section {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 var(--container-pad) 128px;
+}
+
+.about-banner-frame {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 21 / 9;
+  min-height: 280px;
+  background: var(--bg-card);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+}
+
+.about-split-section {
+  padding: 0 var(--container-pad) 128px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 80px;
+}
+
+.about-split-label {
+  flex: 1 1 200px;
+  min-width: 0;
+}
+
+.about-split-content {
+  flex: 4 1 560px;
+  min-width: 0;
+}
+
+.about-who-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 860px;
+}
+
+.about-step-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 40px;
+  padding: 36px 0;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.about-step-num {
+  flex: none;
+  width: 56px;
+  font-family: var(--font-serif);
+  font-size: 22px;
+  color: var(--gold-primary);
+}
+
+.about-step-body {
+  flex: 1 1 300px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about-step-title {
+  font-family: var(--font-serif);
+  font-size: clamp(28px, 3.6vw, 52px);
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+}
+
+.about-step-text {
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--text-light-sub);
+  max-width: 520px;
+}
+
+.about-roster-section {
+  padding: 100px var(--container-pad) 130px;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.about-roster-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.about-category-block {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.about-category-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 14px;
+}
+
+.about-team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+  gap: 28px;
+}
+
+.visionary-card {
+  width: 100%;
+  min-width: 0;
+  background: rgba(12, 12, 11, 0.65);
+  border: 1px solid var(--border-subtle);
+  border-radius: 2px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.visionary-card-media {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--bg-card);
+}
+
+.visionary-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.visionary-card-body {
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.actor-view-details-btn {
+  margin-top: auto;
+  padding: 10px 18px;
+  background: rgba(212, 166, 42, 0.08);
+  border: 1px solid rgba(212, 166, 42, 0.45);
+  border-radius: 2px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold-primary);
+  font-weight: 600;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (hover: hover) {
+  .visionary-card:hover {
+    border-color: rgba(212, 166, 42, 0.6);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.65);
+  }
+  .visionary-card:hover .visionary-card-img {
+    transform: scale(1.06);
+  }
+  .actor-view-details-btn:hover {
+    background: var(--gold-primary);
+    color: #070707;
+    border-color: var(--gold-primary);
+    box-shadow: 0 4px 18px rgba(212, 166, 42, 0.35);
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-hero-section {
+    padding: 104px var(--container-pad) 64px;
+    gap: 32px;
+  }
+  .about-banner-section,
+  .about-split-section {
+    padding-bottom: 84px;
+  }
+  .about-split-section {
+    gap: 28px 48px;
+  }
+  .about-roster-section {
+    padding: 80px var(--container-pad) 96px;
+    gap: 56px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero-section {
+    padding: 88px var(--container-pad) 40px;
+    gap: 20px;
+  }
+  .about-hero-title {
+    font-size: clamp(30px, 8.2vw, 48px);
+    line-height: 1.08;
+  }
+  .about-banner-section {
+    padding: 0 var(--container-pad) 52px;
+  }
+  .about-banner-frame {
+    aspect-ratio: 16 / 9;
+    min-height: 0;
+    height: auto;
+  }
+  .about-split-section {
+    padding: 0 var(--container-pad) 52px;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .about-split-label,
+  .about-split-content {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+  }
+  .about-who-content p {
+    font-size: 15px !important;
+    line-height: 1.65 !important;
+  }
+  .about-step-row {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 24px 0;
+  }
+  .about-step-num {
+    width: 36px;
+    font-size: 18px;
+    padding-top: 3px;
+  }
+  .about-step-body {
+    flex: 1 1 0;
+    gap: 8px;
+  }
+  .about-step-title {
+    font-size: clamp(24px, 6.2vw, 32px);
+  }
+  .about-step-text {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .about-roster-section {
+    padding: 56px var(--container-pad) 64px;
+    gap: 44px;
+  }
+  .about-roster-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .about-category-block {
+    gap: 20px;
+  }
+  .about-team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+  .golden-cta {
+    padding: 64px var(--container-pad);
+  }
+  .golden-cta h2,
+  .golden-cta .cta-text,
+  .golden-cta .arrow {
+    font-size: clamp(32px, 8.5vw, 56px);
+  }
+  .about-modal-topbar {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px 14px !important;
+  }
+}
+
+@media (max-width: 540px) {
+  .about-hero-section {
+    padding: 80px var(--container-pad) 32px;
+    gap: 16px;
+  }
+  .about-hero-title {
+    font-size: clamp(28px, 8vw, 38px);
+  }
+  .about-banner-section {
+    padding: 0 var(--container-pad) 40px;
+  }
+  .about-banner-frame {
+    aspect-ratio: 16 / 10;
+    min-height: 0;
+  }
+  .about-split-section {
+    padding: 0 var(--container-pad) 44px;
+  }
+  .about-team-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+  .visionary-card-body {
+    padding: 18px 16px;
+  }
+  .golden-cta {
+    padding: 52px var(--container-pad);
+  }
+  .golden-cta h2,
+  .golden-cta .cta-text,
+  .golden-cta .arrow {
+    font-size: clamp(28px, 8.5vw, 40px);
+  }
+  .scroll-top-btn {
+    bottom: 20px;
+    right: 16px;
+    width: 42px;
+    height: 42px;
+  }
+}
+
