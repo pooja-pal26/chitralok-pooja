@@ -136,7 +136,7 @@ export const siteData = {
       credit: 'Dir. Pushpendra Singh',
       cat: 'Series',
       year: '2000-2008',
-      img: '/assets/images/kuki sas bhi kbt.avif',
+      img: '/assets/images/kuki sas bhi bahu thi.png',
       videoUrl: 'https://www.youtube-nocookie.com/embed/09UKQGoH2Uk?autoplay=1'
     },
     {
@@ -341,12 +341,12 @@ export const siteData = {
       director: 'Pushpendra Singh',
       studio: 'Star Plus & Balaji Telefilms',
       milestone: 'Record-Breaking 1833 Episodes Culture Shaper',
-      posterImg: '/assets/images/kyunki_saas_bhi_kabhi_bahu_thi.webp?v=2',
-      img: '/assets/images/kyunki_saas_bhi_kabhi_bahu_thi.webp?v=2',
-      bannerImg: '/assets/images/kyunki_saas_bhi_kabhi_bahu_thi.webp?v=2',
+      posterImg: '/assets/images/kuki sas bhi bahu thi.png',
+      img: '/assets/images/kuki sas bhi bahu thi.png',
+      bannerImg: '/assets/images/kuki sas bhi bahu thi.png',
       synopsis: 'The cultural milestone that redefined South Asian entertainment across the globe, chronicling three generations of the grand Virani joint family in Gujarat guided by the moral compass and fortitude of Tulsi Virani.',
       stills: [
-        { img: '/assets/images/kyunki_saas_bhi_kabhi_bahu_thi.webp', title: 'Tulsi Virani Shanti Niketan Grand Arrival', tag: '1280x720 HD Broadcast' },
+        { img: '/assets/images/kuki sas bhi bahu thi.png', title: 'Tulsi Virani Shanti Niketan Grand Arrival', tag: '1280x720 HD Broadcast' },
         { img: '/assets/images/bts_film_set.webp', title: 'Virani Haveli Architectural Studio Floor', tag: 'Production Set' },
         { img: '/assets/images/bts_rehearsal.webp', title: 'Grand Ensemble Cast Script Coordination', tag: 'Cast Rehearsal' }
       ],
@@ -969,7 +969,7 @@ export const siteData = {
         kind: 'Iconic Daily Drama',
         network: 'Star Plus / Balaji Telefilms',
         role: 'Director',
-        img: '/assets/images/kyunki_saas_bhi_kabhi_bahu_thi.webp?v=2'
+        img: '/assets/images/kuki sas bhi bahu thi.png'
       },
       {
         year: '2006',
