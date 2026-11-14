@@ -297,9 +297,27 @@ export default function Director({ onOpenVideo }) {
                 position: 'relative',
                 aspectRatio: '3/4',
                 width: '100%',
-                background: '#0d0d0d',
+                background: '#0a0a09',
                 overflow: 'hidden'
               }}>
+                {/* Ambient Blurred Backdrop for Full Artwork Depth */}
+                <img
+                  src={item.img}
+                  alt=""
+                  aria-hidden="true"
+                  style={{
+                    position: 'absolute',
+                    inset: '-15px',
+                    width: 'calc(100% + 30px)',
+                    height: 'calc(100% + 30px)',
+                    objectFit: 'cover',
+                    objectPosition: 'center',
+                    filter: 'blur(22px) brightness(0.32)',
+                    opacity: 0.85,
+                    pointerEvents: 'none'
+                  }}
+                />
+                {/* 100% Full Uncut High-Definition Main Image */}
                 <img
                   src={item.img}
                   alt={item.title}
@@ -308,8 +326,9 @@ export default function Director({ onOpenVideo }) {
                     inset: 0,
                     width: '100%',
                     height: '100%',
-                    objectFit: 'cover',
-                    objectPosition: 'center top',
+                    objectFit: 'contain',
+                    objectPosition: 'center',
+                    imageRendering: '-webkit-optimize-contrast',
                     transition: 'transform 0.4s ease'
                   }}
                   loading="lazy"

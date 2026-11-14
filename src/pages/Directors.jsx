@@ -33,12 +33,12 @@ export default function Directors() {
           lineHeight: 0.94,
           letterSpacing: '-0.035em'
         }}>
-          The <span style={{ fontStyle: 'italic', color: 'var(--gold-primary)' }}>Directors.</span>
+          <span style={{ fontStyle: 'italic', color: 'var(--gold-primary)' }}>Directors.</span>
         </h1>
 
-        <p style={{ margin: 0, maxWidth: '680px', fontSize: '19px', lineHeight: 1.65, color: 'var(--text-light-sub)' }}>
+        {/* <p style={{ margin: 0, maxWidth: '680px', fontSize: '19px', lineHeight: 1.65, color: 'var(--text-light-sub)' }}>
           Visionary leadership, strategic governance, and an unwavering commitment to cinematic excellence guide S&P Chitralok Studios across feature films and television productions.
-        </p>
+        </p> */}
       </section>
 
       {/* Directors Cards Grid Section */}

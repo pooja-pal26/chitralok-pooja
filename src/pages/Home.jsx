@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { siteData } from '../data/content';
 import Marquee from '../components/Marquee';
@@ -45,6 +45,23 @@ export default function Home({ onOpenVideo }) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const touchStartX = useRef(null);
+
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = (e) => {
+    if (touchStartX.current === null) return;
+    const diff = touchStartX.current - e.changedTouches[0].clientX;
+    if (diff > 45) {
+      setActiveSlide((prev) => (prev < heroSlides.length - 1 ? prev + 1 : 0));
+    } else if (diff < -45) {
+      setActiveSlide((prev) => (prev > 0 ? prev - 1 : heroSlides.length - 1));
+    }
+    touchStartX.current = null;
+  };
+
   const handlePrevSlide = (e) => {
     e.stopPropagation();
     setActiveSlide((prev) => (prev > 0 ? prev - 1 : heroSlides.length - 1));
@@ -69,17 +86,22 @@ export default function Home({ onOpenVideo }) {
         overflow: 'hidden'
       }}>
         {/* Visual Frame: Contains Carousel Images & Navigation Controls */}
-        <div className="hero-visual-frame" style={{
-          position: 'absolute',
-          inset: 0,
-          width: '100%',
-          height: '100%',
-          overflow: 'hidden'
-        }}>
+        <div
+          className="hero-visual-frame"
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
+          style={{
+            position: 'absolute',
+            inset: 0,
+            width: '100%',
+            height: '100%',
+            overflow: 'hidden'
+          }}
+        >
           {/* Background Visual Carousel: Stacked Crossfading Images */}
           {heroSlides.map((slide, idx) => (
             <React.Fragment key={slide.id}>
-              {/* Ambient Blurred Background (Desktop Glow) */}
+              {/* Ambient Blurred Background (Cinema Backdrop Glow) */}
               <img
                 src={slide.bgImage}
                 alt=""
@@ -87,20 +109,20 @@ export default function Home({ onOpenVideo }) {
                 className="hero-slide-ambient"
                 style={{
                   position: 'absolute',
-                  inset: '-20px',
-                  width: 'calc(100% + 40px)',
-                  height: 'calc(100% + 40px)',
+                  inset: '-25px',
+                  width: 'calc(100% + 50px)',
+                  height: 'calc(100% + 50px)',
                   objectFit: 'cover',
                   objectPosition: 'center',
                   filter: 'blur(36px) brightness(0.35)',
-                  opacity: activeSlide === idx ? 1 : 0,
+                  opacity: activeSlide === idx ? 0.9 : 0,
                   transition: 'opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1)',
                   pointerEvents: 'none',
-                  display: 'none'
+                  display: 'block'
                 }}
               />
 
-              {/* Crisp Main Visual (Cinematic Cover on Desktop, Complete 100% Contain on Mobile) */}
+              {/* Crisp 100% High-Definition Main Visual (Full Uncut on Desktop & Mobile) */}
               <img
                 src={slide.bgImage}
                 alt={`S&P Chitralok Studios Visual ${slide.id}`}
@@ -110,36 +132,16 @@ export default function Home({ onOpenVideo }) {
                   inset: 0,
                   width: '100%',
                   height: '100%',
-                  objectFit: 'cover',
-                  objectPosition: 'center top',
-                  filter: isScrolledDown ? 'brightness(0.68)' : 'brightness(0.92)',
+                  objectFit: 'contain',
+                  objectPosition: 'center center',
+                  filter: 'none',
                   opacity: activeSlide === idx ? 1 : 0,
-                  transform: activeSlide === idx ? 'scale(1)' : 'scale(1.05)',
-                  transition: 'opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1), transform 8s ease-out, filter 0.8s ease',
+                  transition: 'opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1)',
                   pointerEvents: 'none'
                 }}
               />
             </React.Fragment>
           ))}
-
-          <div className="hero-visual-gradient" style={{
-            position: 'absolute',
-            inset: 0,
-            background: isScrolledDown
-              ? 'linear-gradient(180deg, rgba(7,7,7,0.35) 0%, rgba(7,7,7,0.88) 100%)'
-              : 'linear-gradient(180deg, rgba(7,7,7,0.08) 0%, rgba(7,7,7,0.45) 100%)',
-            transition: 'background 0.8s ease',
-            pointerEvents: 'none'
-          }} />
-
-          {/* Left & Right Cinematic Edge Fade Vignettes (Like Hero 2) */}
-          <div className="hero-side-vignettes" style={{
-            position: 'absolute',
-            inset: 0,
-            background: 'linear-gradient(90deg, rgba(7,7,7,0.88) 0%, rgba(7,7,7,0) 20%, rgba(7,7,7,0) 80%, rgba(7,7,7,0.88) 100%)',
-            pointerEvents: 'none',
-            zIndex: 3
-          }} />
 
           {/* Carousel Navigation Arrow Buttons (Floating on sides) */}
           <div className="hero-arrow-nav" style={{
@@ -276,14 +278,22 @@ export default function Home({ onOpenVideo }) {
           pointerEvents: isScrolledDown ? 'auto' : 'none'
         }}>
           <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '14px' }}>
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              gap: '12px',
+              marginBottom: '14px',
+              width: '100%'
+            }}>
               <span style={{
                 fontFamily: 'var(--font-mono)',
-                fontSize: '11px',
-                letterSpacing: '0.22em',
+                fontSize: 'clamp(10px, 2.8vw, 11px)',
+                letterSpacing: '0.18em',
                 textTransform: 'uppercase',
                 color: 'var(--gold-primary)',
-                fontWeight: 600
+                fontWeight: 600,
+                lineHeight: 1.3
               }}>
                 {hero.tag}
               </span>
@@ -291,9 +301,12 @@ export default function Home({ onOpenVideo }) {
                 fontSize: '11px',
                 fontFamily: 'var(--font-mono)',
                 color: 'var(--text-secondary)',
-                letterSpacing: '0.12em'
+                letterSpacing: '0.12em',
+                whiteSpace: 'nowrap',
+                flexShrink: 0,
+                marginLeft: 'auto'
               }}>
-                · {String(activeSlide + 1).padStart(2, '0')} / {String(heroSlides.length).padStart(2, '0')}
+                · {String(activeSlide + 1).padStart(2, '0')}&nbsp;/&nbsp;{String(heroSlides.length).padStart(2, '0')}
               </span>
             </div>
 
@@ -481,13 +494,31 @@ export default function Home({ onOpenVideo }) {
               <div style={{
                 position: 'relative',
                 aspectRatio: '16/9',
-                background: 'var(--bg-card)',
+                background: '#0a0a09',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 overflow: 'hidden',
                 border: '1px solid var(--border-subtle)'
               }}>
+                {/* Ambient Blurred Backdrop for Full Artwork Depth */}
+                <img
+                  src={work.img}
+                  alt=""
+                  aria-hidden="true"
+                  style={{
+                    position: 'absolute',
+                    inset: '-15px',
+                    width: 'calc(100% + 30px)',
+                    height: 'calc(100% + 30px)',
+                    objectFit: 'cover',
+                    objectPosition: 'center',
+                    filter: 'blur(22px) brightness(0.32)',
+                    opacity: 0.85,
+                    pointerEvents: 'none'
+                  }}
+                />
+                {/* 100% Full Uncut High-Definition Main Image */}
                 <img
                   src={work.img}
                   alt={work.title}
@@ -496,7 +527,9 @@ export default function Home({ onOpenVideo }) {
                     inset: 0,
                     width: '100%',
                     height: '100%',
-                    objectFit: 'cover',
+                    objectFit: 'contain',
+                    objectPosition: 'center',
+                    imageRendering: '-webkit-optimize-contrast',
                     transition: 'transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)'
                   }}
                 />

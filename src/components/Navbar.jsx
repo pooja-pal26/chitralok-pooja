@@ -86,7 +86,8 @@ export default function Navbar() {
           />
           <span className="brand-divider" aria-hidden="true" />
           <span className="brand-title">
-            <span>S&P Chitralok</span>
+            <span className="brand-sp">S&P</span>
+            <span>Chitralok</span>
             <span style={{ color: 'var(--gold-primary)' }}>Studios</span>
           </span>
         </Link>
@@ -182,17 +183,12 @@ export default function Navbar() {
       <div className={`mobile-drawer ${isMobileOpen ? 'open' : ''}`} role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
         {/* Mobile Drawer Top Bar with Brand & Close Button */}
         <div className="mobile-drawer-header">
-          <Link to="/" onClick={closeMobileNav} className="brand-link" aria-label="S&P Chitralok Studios">
+          <Link to="/" onClick={closeMobileNav} className="brand-link" aria-label="S&P Chitralok Studios" style={{ gap: 0 }}>
             <img
               src={siteData.brand.logo}
               alt="S&P Chitralok Studios Logo"
               className="brand-logo-img"
             />
-            <span className="brand-divider" aria-hidden="true" />
-            <span className="brand-title">
-              <span>S&P Chitralok</span>
-              <span style={{ color: 'var(--gold-primary)' }}>Studios</span>
-            </span>
           </Link>
 
           <button

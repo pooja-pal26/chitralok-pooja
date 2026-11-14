@@ -39,12 +39,12 @@ export const siteData = {
     headlineMain: 'people',
     headlineAccent: 'remember.',
     manifesto: 'We ideate, produce, collaborate, engage and deliver best-in-class audiovisuals for cinema, OTT and global brands.',
-    bgImage: '/assets/images/Paid Palki_ A Rural Love Story journey.png',
+    bgImage: '/assets/images/Paid Palki_ A Rural Love Story journey.png?v=3',
     slides: [
       {
         id: 1,
-        bgImage: '/assets/images/Paid Palki_ A Rural Love Story journey.png',
-        posterImg: '/assets/images/Paid Palki_ A Rural Love Story journey.png',
+        bgImage: '/assets/images/Paid Palki_ A Rural Love Story journey.png?v=3',
+        posterImg: '/assets/images/Paid Palki_ A Rural Love Story journey.png?v=3',
         subTag: 'Feature Film · In Filming'
       },
       {
@@ -100,13 +100,13 @@ export const siteData = {
     {
       id: 1,
       title: 'Paid Palki',
-      posterImg: '/assets/images/Paid Palki_ A Rural Love Story journey.png',
+      posterImg: '/assets/images/Paid Palki_ A Rural Love Story journey.png?v=3',
       client: 'S&P Chitralok Studios',
       credit: 'Writer & Dir. Pushpenddra Singh',
       cat: 'Film',
       year: 'In Filming',
       status: 'In Filming',
-      img: '/assets/images/Paid Palki_ A Rural Love Story journey.png'
+      img: '/assets/images/Paid Palki_ A Rural Love Story journey.png?v=3'
     },
     {
       id: 2,
@@ -200,7 +200,7 @@ export const siteData = {
       id: 1,
       cat: 'Film',
       title: 'Paid Palki',
-      posterImg: '/assets/images/Paid Palki_ A Rural Love Story journey.png',
+      posterImg: '/assets/images/Paid Palki_ A Rural Love Story journey.png?v=3',
       client: 'S&P Chitralok Studios',
       credit: 'Writer & Dir. Pushpenddra Singh',
       year: 'In Filming',
@@ -213,8 +213,8 @@ export const siteData = {
       screenplay: 'Pushpendrra Singh & Prragati Chauhaan',
       dialogues: 'Shashank Singh',
       dop: 'Shashank Sahu',
-      img: '/assets/images/Paid Palki_ A Rural Love Story journey.png',
-      bannerImg: '/assets/images/Paid Palki_ A Rural Love Story journey.png',
+      img: '/assets/images/Paid Palki_ A Rural Love Story journey.png?v=3',
+      bannerImg: '/assets/images/Paid Palki_ A Rural Love Story journey.png?v=3',
       synopsis: 'Set in the heart of rural Madhya Pradesh, Santu, an unmarried young man facing societal pressure, is persuaded to buy a bride from a remote tribal settlement. Captivated by Kemli, a sheltered tribal girl, he brings her home where genuine affection blossoms between them. But when Kemli’s family forcibly takes her back, Santu embarks on an emotional struggle to reunite with the woman he loves—a powerful story of love emerging from exploitation and the courage to challenge human trafficking.',
       stills: [
         { img: '/assets/images/paid_palki_poster.webp', title: 'Official Theatrical 1-Sheet Poster', tag: 'Theatrical Art' },
@@ -546,9 +546,9 @@ export const siteData = {
       director: 'Associate Dir. Pushpendra Singh',
       studio: 'STAR One & Balaji Telefilms',
       milestone: 'Beloved 200+ Episode Romantic Comedy',
-      posterImg: '/assets/images/kyaa_hoga_nimmo_kaa.webp?v=2',
-      img: '/assets/images/kyaa_hoga_nimmo_kaa.webp?v=2',
-      bannerImg: '/assets/images/kyaa_hoga_nimmo_kaa.webp?v=2',
+      posterImg: '/assets/images/kyaa_hoga_nimmo_kaa.webp?v=3',
+      img: '/assets/images/kyaa_hoga_nimmo_kaa.webp?v=3',
+      bannerImg: '/assets/images/kyaa_hoga_nimmo_kaa.webp?v=3',
       synopsis: 'A cheerful romantic comedy tracing the life of Nimmo, a charming middle-class girl with perpetual bad luck, whose unexpected arrangement with high-flying billionaire Kunal Sehgal evolves into genuine tenderness.',
       stills: [
         { img: '/assets/images/kyaa_hoga_nimmo_kaa.webp', title: 'Nimmo & Kunal Sehgal Humorous Moment', tag: '1280x720 HD Broadcast' },
@@ -845,7 +845,6 @@ export const siteData = {
       {
         name: 'Prragati Chauhaan',
         img: '/assets/images/pp.jpeg',
-       
         vision: 'Cinema is the ultimate conduit of empathy. Breathing life into complex characters and shaping narratives from page to screen is our true calling.',
         detailsPath: '/actor/prragati-chauhaan',
         path: '/actor/prragati-chauhaan'
@@ -874,32 +873,29 @@ export const siteData = {
     {
       id: 1,
       name: 'AMOD KUMAR SINGH',
-      role: 'Director',
-      company: 'S&P Chitralok Studios',
+      // company: 'S&P Chitralok Studios',
       monogram: 'AS',
       img: '/assets/images/producers/producer_amod.webp',
       vision: 'Pioneering cutting-edge cinematic storytelling with unwavering dedication to craft, strategic leadership, and creative integrity.',
-      bio: 'Leading strategic vision and institutional governance at S&P Chitralok Studios, championing transformative storytelling and world-class production value.'
+      // bio: 'Leading strategic vision and institutional governance at S&P Chitralok Studios, championing transformative storytelling and world-class production value.'
     },
     {
       id: 2,
       name: 'PAWAN KUMAR',
-      role: 'Director',
-      company: 'S&P Chitralok Studios',
+      // company: 'S&P Chitralok Studios',
       monogram: 'PK',
       img: '/assets/images/producers/producer_pawan.webp',
       vision: 'Fostering cultural authenticity and cinematic scale that leaves an enduring legacy in Indian cinema and global entertainment.',
-      bio: 'Steering high-impact production operations and creative development, dedicated to bringing socially grounded narratives to life on screen.'
+      // bio: 'Steering high-impact production operations and creative development, dedicated to bringing socially grounded narratives to life on screen.'
     },
     {
       id: 3,
       name: 'KRISHNA PANDEY',
-      role: 'Director',
-      company: 'S&P Chitralok Studios',
+      // company: 'S&P Chitralok Studios',
       monogram: 'KP',
       img: '/assets/images/producers/producer_krishnakant.webp',
       vision: 'Driving visionary collaborations, institutional growth, and technical excellence from script development to theatrical release.',
-      bio: 'Championing institutional partnerships, technical infrastructure, and groundbreaking audiovisual ventures that expand cinematic frontiers.'
+      // bio: 'Championing institutional partnerships, technical infrastructure, and groundbreaking audiovisual ventures that expand cinematic frontiers.'
     }
   ],
 
@@ -930,7 +926,7 @@ export const siteData = {
         kind: 'Feature Film (Writer & Director)',
         network: 'S&P Chitralok Studios',
         role: 'Writer & Director',
-        img: '/assets/images/Paid Palki_ A Rural Love Story journey.png'
+        img: '/assets/images/Paid Palki_ A Rural Love Story journey.png?v=3'
       },
       {
         year: '2005',
@@ -1018,7 +1014,7 @@ export const siteData = {
         kind: 'Comedy Drama Series',
         network: 'STAR One / Balaji Telefilms',
         role: 'Associate Director',
-        img: '/assets/images/kyaa_hoga_nimmo_kaa.webp?v=2'
+        img: '/assets/images/kyaa_hoga_nimmo_kaa.webp?v=3'
       }
     ],
     awards: [
