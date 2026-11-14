@@ -94,7 +94,7 @@ export default function Contact() {
             </span>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '2px', fontSize: '18px', lineHeight: 1.55, color: 'var(--text-primary)' }}>
               <div style={{ display: 'block', fontFamily: 'var(--font-serif)', fontSize: '20px', fontWeight: 600, color: 'var(--gold-primary)', marginBottom: '2px' }}>
-                S &amp; P Chitralok Studios
+                S&amp;P Chitralok Studios
               </div>
               <div style={{ display: 'block', color: 'var(--text-light-sub)' }}>24/3, 24/4 &amp; 24/5, 3rd Floor,</div>
               <div style={{ display: 'block', color: 'var(--text-light-sub)' }}>Block E, Pandav Nagar,</div>

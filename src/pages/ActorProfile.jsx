@@ -28,7 +28,7 @@ export default function ActorProfile({ onOpenVideo, isEmbed: isEmbedProp }) {
     quote: '“Acting is not merely performing; it is a sacred act of stepping into the soul of another human being and defending their truth without judgment.”',
     bio1: 'Prragati Chauhaan is a powerhouse Indian actress, model, and screen narrative architect recognized for her nuanced character immersion, raw emotional gravity, and dedication to socially grounded Indian cinema.',
     bio2: 'In the landmark social feature film "Paid Palki", presented by S&P Chitralok Studios, Prragati headlines as the central protagonist "Kemli" — a sheltered tribal girl whose transformation from vulnerability to fierce dignity forms the emotional core of the film.',
-    bio3: 'As a creative pillar and narrative lead at Chitralok Studios, Prragati champions fearless storytelling that reflects the complexities of contemporary and rural India.',
+    bio3: 'As a creative pillar and narrative lead at S&P Chitralok Studios, Prragati champions fearless storytelling that reflects the complexities of contemporary and rural India.',
     filmography: [],
     stills: [],
     attributes: []
@@ -129,7 +129,7 @@ export default function ActorProfile({ onOpenVideo, isEmbed: isEmbedProp }) {
             fontWeight: 600,
             fontFamily: 'var(--font-mono)'
           }}>
-            ARTIST PROFILE · CHITRALOK STUDIOS
+            ARTIST PROFILE · S&P CHITRALOK STUDIOS
           </span> */}
           {/* <span style={{
             fontSize: '11px',
@@ -675,7 +675,7 @@ export default function ActorProfile({ onOpenVideo, isEmbed: isEmbedProp }) {
       <section style={{ margin: '24px 0 36px' }}>
         <KineticTicker
           track1={['PRRAGATI CHAUHAAN', 'LEAD ACTRESS', 'PAID PALKI', 'SCREENPLAY WRITER']}
-          track2={['CHITRALOK STUDIOS', 'NARRATIVE LEAD', 'AUTEUR CINEMA', 'METHOD ACTING']}
+          track2={['S&P CHITRALOK STUDIOS', 'NARRATIVE LEAD', 'AUTEUR CINEMA', 'METHOD ACTING']}
         />
       </section>
 
@@ -688,7 +688,7 @@ export default function ActorProfile({ onOpenVideo, isEmbed: isEmbedProp }) {
 
       {/* Footer / CTA Section */}
       {!isEmbed ? (
-        <GoldenCTA text="Collaborate with Chitralok" link="/contact" />
+        <GoldenCTA text="Collaborate with S&P Chitralok" link="/contact" />
       ) : (
         <div style={{
           padding: '24px clamp(16px, 4vw, 48px)',

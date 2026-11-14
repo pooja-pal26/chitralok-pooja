@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { siteData } from '../data/content';
 
 /**
- * Preloader — Minimalist Luxury Intro for Chitralok Studios
+ * Preloader — Minimalist Luxury Intro for S&P Chitralok Studios
  * Understated, sleek, and fast (1.0s). Refined 1px golden hairline progress
  * and elegant typography matching Dharma 2.0 quiet luxury aesthetic.
  */

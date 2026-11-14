@@ -1,10 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { siteData } from '../data/content';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const [isProjectsDropdownOpen, setIsProjectsDropdownOpen] = useState(false);
+  const [isMobileProjectsOpen, setIsMobileProjectsOpen] = useState(true);
+  const dropdownRef = useRef(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -15,11 +18,32 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close mobile drawer on route change
+  // Close menus on route change or search query change
   useEffect(() => {
+    setIsProjectsDropdownOpen(false);
     setIsMobileOpen(false);
     document.body.style.overflow = '';
-  }, [location.pathname]);
+  }, [location.pathname, location.search]);
+
+  // Handle outside clicks and Escape key for desktop dropdown
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+        setIsProjectsDropdownOpen(false);
+      }
+    };
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        setIsProjectsDropdownOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
 
   // Close mobile drawer on Escape key press
   useEffect(() => {
@@ -46,20 +70,23 @@ export default function Navbar() {
     document.body.style.overflow = '';
   };
 
-  const isActive = (path) => location.pathname === path;
+  const isActive = (path) => {
+    if (path === '/') return location.pathname === '/';
+    return location.pathname === path || location.pathname.startsWith(`${path}/`);
+  };
 
   return (
     <>
       <header className={`site-header ${isScrolled ? 'scrolled' : ''}`}>
-        <Link to="/" className="brand-link" aria-label="Chitralok Studios">
+        <Link to="/" className="brand-link" aria-label="S&P Chitralok Studios">
           <img
             src={siteData.brand.logo}
-            alt="Chitralok Studios Logo"
+            alt="S&P Chitralok Studios Logo"
             className="brand-logo-img"
           />
           <span className="brand-divider" aria-hidden="true" />
           <span className="brand-title">
-            <span>Chitralok</span>
+            <span>S&P Chitralok</span>
             <span style={{ color: 'var(--gold-primary)' }}>Studios</span>
           </span>
         </Link>
@@ -72,12 +99,67 @@ export default function Navbar() {
           <Link to="/about" className={`nl ${isActive('/about') ? 'active' : ''}`}>
             About Us
           </Link>
-          <Link to="/director" className={`nl ${isActive('/director') ? 'active' : ''}`}>
-            Director
+          <Link to="/directors" className={`nl ${isActive('/directors') ? 'active' : ''}`}>
+            Directors
           </Link>
-          <Link to="/work" className={`nl ${isActive('/work') ? 'active' : ''}`}>
-            Projects
-          </Link>
+
+          {/* Projects with Dropdown: Films & Serials */}
+          <div
+            className="nav-dropdown-wrapper"
+            ref={dropdownRef}
+            onMouseEnter={() => setIsProjectsDropdownOpen(true)}
+            onMouseLeave={() => setIsProjectsDropdownOpen(false)}
+          >
+            <Link
+              to="/work"
+              className={`nl nav-dropdown-trigger ${isActive('/work') ? 'active' : ''}`}
+              aria-expanded={isProjectsDropdownOpen}
+              aria-haspopup="true"
+            >
+              <span>Projects</span>
+              <svg
+                className={`nav-dropdown-caret ${isProjectsDropdownOpen ? 'open' : ''}`}
+                width="10"
+                height="10"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </Link>
+
+            <div
+              className={`nav-dropdown-menu ${isProjectsDropdownOpen ? 'show' : ''}`}
+              role="menu"
+              aria-label="Projects Submenu"
+            >
+              <Link
+                to="/work?cat=Film"
+                className="nav-dropdown-item"
+                onClick={() => setIsProjectsDropdownOpen(false)}
+                role="menuitem"
+              >
+                <span className="nav-dropdown-bullet">•</span>
+                <span className="nav-dropdown-label">Films</span>
+              </Link>
+              <div className="nav-dropdown-divider" />
+              <Link
+                to="/work?cat=Series"
+                className="nav-dropdown-item"
+                onClick={() => setIsProjectsDropdownOpen(false)}
+                role="menuitem"
+              >
+                <span className="nav-dropdown-bullet">•</span>
+                <span className="nav-dropdown-label">Serials</span>
+              </Link>
+            </div>
+          </div>
+
           <Link to="/contact" className={`nl ${isActive('/contact') ? 'active' : ''}`}>
             Contact Us
           </Link>
@@ -100,15 +182,15 @@ export default function Navbar() {
       <div className={`mobile-drawer ${isMobileOpen ? 'open' : ''}`} role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
         {/* Mobile Drawer Top Bar with Brand & Close Button */}
         <div className="mobile-drawer-header">
-          <Link to="/" onClick={closeMobileNav} className="brand-link" aria-label="Chitralok Studios">
+          <Link to="/" onClick={closeMobileNav} className="brand-link" aria-label="S&P Chitralok Studios">
             <img
               src={siteData.brand.logo}
-              alt="Chitralok Studios Logo"
+              alt="S&P Chitralok Studios Logo"
               className="brand-logo-img"
             />
             <span className="brand-divider" aria-hidden="true" />
             <span className="brand-title">
-              <span>Chitralok</span>
+              <span>S&P Chitralok</span>
               <span style={{ color: 'var(--gold-primary)' }}>Studios</span>
             </span>
           </Link>
@@ -129,8 +211,56 @@ export default function Navbar() {
         <nav className="mobile-drawer-links" aria-label="Mobile Menu Links">
           <Link to="/" onClick={closeMobileNav} className={`mobile-nav-link ${isActive('/') ? 'active' : ''}`}>Home</Link>
           <Link to="/about" onClick={closeMobileNav} className={`mobile-nav-link ${isActive('/about') ? 'active' : ''}`}>About Us</Link>
-          <Link to="/director" onClick={closeMobileNav} className={`mobile-nav-link ${isActive('/director') ? 'active' : ''}`}>Director</Link>
-          <Link to="/work" onClick={closeMobileNav} className={`mobile-nav-link ${isActive('/work') ? 'active' : ''}`}>Projects</Link>
+          <Link to="/directors" onClick={closeMobileNav} className={`mobile-nav-link ${isActive('/directors') ? 'active' : ''}`}>Directors</Link>
+
+          {/* Mobile Projects Accordion with Films & Serials */}
+          <div className="mobile-drawer-accordion-item">
+            <div className="mobile-drawer-projects-trigger">
+              <Link
+                to="/work"
+                onClick={closeMobileNav}
+                className={`mobile-nav-link ${isActive('/work') ? 'active' : ''}`}
+              >
+                Projects
+              </Link>
+              <button
+                type="button"
+                className={`mobile-sub-toggle ${isMobileProjectsOpen ? 'expanded' : ''}`}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setIsMobileProjectsOpen(prev => !prev);
+                }}
+                aria-label="Toggle projects submenu"
+                aria-expanded={isMobileProjectsOpen}
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+            </div>
+
+            {isMobileProjectsOpen && (
+              <div className="mobile-projects-submenu">
+                <Link
+                  to="/work?cat=Film"
+                  onClick={closeMobileNav}
+                  className="mobile-sub-link"
+                >
+                  <span className="mobile-sub-bullet">•</span>
+                  <span>Films</span>
+                </Link>
+                <Link
+                  to="/work?cat=Series"
+                  onClick={closeMobileNav}
+                  className="mobile-sub-link"
+                >
+                  <span className="mobile-sub-bullet">•</span>
+                  <span>Serials</span>
+                </Link>
+              </div>
+            )}
+          </div>
+
           <Link to="/contact" onClick={closeMobileNav} className={`mobile-nav-link ${isActive('/contact') ? 'active' : ''}`}>Contact Us</Link>
         </nav>
       </div>

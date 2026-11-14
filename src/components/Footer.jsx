@@ -58,7 +58,7 @@ export default function Footer() {
             <Link
               to="/"
               className="footer-logo-link"
-              aria-label="Chitralok Studios Home"
+              aria-label="S&P Chitralok Studios Home"
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
@@ -69,7 +69,7 @@ export default function Footer() {
             >
               <img
                 src={siteData.brand.logo}
-                alt="Chitralok Studios Logo"
+                alt="S&P Chitralok Studios Logo"
                 style={{
                   width: '42px',
                   height: '42px',
@@ -112,7 +112,7 @@ export default function Footer() {
                   lineHeight: 1.3
                 }}
               >
-                S &amp; P Chitralok Studios
+                S&amp;P Chitralok Studios
               </div>
               <div className="footer-address-line" style={{ display: 'block', width: '100%', fontSize: '15px', color: 'var(--text-light-sub)', lineHeight: 1.5 }}>
                24/3, 24/4 & 24/5, 3rd Floor,     
@@ -167,7 +167,7 @@ export default function Footer() {
             <div className="footer-nav-list">
               <Link className="nl" to="/">Home</Link>
               <Link className="nl" to="/about">About Us</Link>
-              <Link className="nl" to="/director">Director</Link>
+              <Link className="nl" to="/directors">Directors</Link>
               <Link className="nl" to="/work">Projects</Link>
               <Link className="nl" to="/contact">Contact Us</Link>
             </div>
@@ -208,13 +208,13 @@ export default function Footer() {
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
           <img
             src={siteData.brand.logo}
-            alt="Chitralok Studios Logo"
+            alt="S&P Chitralok Studios Logo"
             style={{ width: '32px', height: '32px', objectFit: 'contain', filter: 'drop-shadow(0 0 6px rgba(212, 166, 42, 0.4))' }}
           />
-          <span className="footer-brand">S &amp; P {siteData.brand.fullName}</span>
+          <span className="footer-brand">{siteData.brand.fullName}</span>
         </div>
         <span className="footer-copy">
-          © {new Date().getFullYear()} S &amp; P Chitralok Studios. All rights reserved.
+          © {new Date().getFullYear()} S&amp;P Chitralok Studios. All rights reserved.
         </span>
       </div>
     </footer>

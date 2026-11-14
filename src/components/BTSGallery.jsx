@@ -505,14 +505,14 @@ export default function BTSGallery({ onOpenMedia, onOpenImage }) {
       <KineticTicker
         track1={[
           'LIFE ON SET||& THE CRAFT',
-          'BEHIND THE SCENES||CHITRALOK',
+          'BEHIND THE SCENES||S&P CHITRALOK',
           'LIFE ON SET||& THE CRAFT',
-          'BEHIND THE SCENES||CHITRALOK'
+          'BEHIND THE SCENES||S&P CHITRALOK'
         ]}
         track2={[
-          'BEHIND THE SCENES||CHITRALOK',
+          'BEHIND THE SCENES||S&P CHITRALOK',
           'LIFE ON SET||& THE CRAFT',
-          'BEHIND THE SCENES||CHITRALOK',
+          'BEHIND THE SCENES||S&P CHITRALOK',
           'LIFE ON SET||& THE CRAFT'
         ]}
       />

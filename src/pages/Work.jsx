@@ -1,18 +1,78 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useSearchParams, useLocation } from 'react-router-dom';
 import { siteData } from '../data/content';
 import GoldenCTA from '../components/GoldenCTA';
 import ProjectModal from '../components/ProjectModal';
 
 export default function Work({ onOpenVideo }) {
   const { allWorks } = siteData;
-  const [activeFilter, setActiveFilter] = useState('All');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const location = useLocation();
+  const catQuery = searchParams.get('cat') || searchParams.get('category');
+  const projectIdQuery = searchParams.get('id');
+
+  const filterOptions = [
+    { label: 'All', value: 'All' },
+    { label: 'Films', value: 'Film' },
+    { label: 'Serials', value: 'Series' },
+    { label: 'Ad Films', value: 'Ad Film' }
+  ];
+
+  const parseFilterFromQuery = (q, path = '') => {
+    if (path.includes('/work/films')) return 'Film';
+    if (path.includes('/work/serials')) return 'Series';
+    if (!q) return 'All';
+    const lower = q.toLowerCase();
+    if (lower === 'film' || lower === 'films') return 'Film';
+    if (lower === 'series' || lower === 'serial' || lower === 'serials') return 'Series';
+    if (lower.includes('ad')) return 'Ad Film';
+    return 'All';
+  };
+
+  const [activeFilter, setActiveFilter] = useState(() => parseFilterFromQuery(catQuery, location.pathname));
   const [selectedProject, setSelectedProject] = useState(null);
 
-  const categories = ['All', 'Film', 'Series', 'Ad Film'];
+  // Synchronize state when URL query param or path changes
+  useEffect(() => {
+    setActiveFilter(parseFilterFromQuery(catQuery, location.pathname));
+  }, [catQuery, location.pathname]);
+
+  // Open modal if id query param matches
+  useEffect(() => {
+    if (projectIdQuery && allWorks) {
+      const match = allWorks.find(w => String(w.id) === String(projectIdQuery));
+      if (match) setSelectedProject(match);
+    }
+  }, [projectIdQuery, allWorks]);
+
+  const handleFilterClick = (catVal) => {
+    setActiveFilter(catVal);
+    if (catVal === 'All') {
+      setSearchParams({});
+    } else {
+      setSearchParams({ cat: catVal });
+    }
+  };
 
   const filteredWorks = activeFilter === 'All'
     ? allWorks
     : allWorks.filter(w => w.cat === activeFilter);
+
+  const getHeadingTitle = () => {
+    if (activeFilter === 'Film') return 'films.';
+    if (activeFilter === 'Series') return 'serials.';
+    return 'projects.';
+  };
+
+  const getHeadingSubtitle = () => {
+    if (activeFilter === 'Film') {
+      return 'Landmark feature films written, directed, and produced by S&P Chitralok Studios.';
+    }
+    if (activeFilter === 'Series') {
+      return 'Iconic prime-time television serials and legendary classics directed by Pushpendra Singh.';
+    }
+    return 'A curated archive of landmark feature films, television classics, and commercial advertisements.';
+  };
 
   return (
     <div style={{ width: '100%' }}>
@@ -26,10 +86,10 @@ export default function Work({ onOpenVideo }) {
           lineHeight: 0.92,
           letterSpacing: '-0.035em'
         }}>
-          Our <span style={{ fontStyle: 'italic', color: 'var(--gold-primary)' }}>projects.</span>
+          Our <span style={{ fontStyle: 'italic', color: 'var(--gold-primary)' }}>{getHeadingTitle()}</span>
         </h1>
-        <p style={{ margin: 0, maxWidth: '640px', fontSize: '19px', lineHeight: 1.65, color: 'var(--text-light-sub)' }}>
-          A curated archive of landmark feature films, television classics, and commercial advertisements.
+        <p style={{ margin: 0, maxWidth: '680px', fontSize: '19px', lineHeight: 1.65, color: 'var(--text-light-sub)' }}>
+          {getHeadingSubtitle()}
         </p>
 
         <div role="group" aria-label="Filter projects by category" style={{
@@ -40,13 +100,13 @@ export default function Work({ onOpenVideo }) {
           paddingTop: '20px',
           marginTop: '8px'
         }}>
-          {categories.map((cat, idx) => {
-            const isActive = activeFilter === cat;
+          {filterOptions.map((opt, idx) => {
+            const isActive = activeFilter === opt.value;
             return (
               <button
                 key={idx}
                 className={`filter-btn ${isActive ? 'active' : 'fb'}`}
-                onClick={() => setActiveFilter(cat)}
+                onClick={() => handleFilterClick(opt.value)}
                 aria-pressed={isActive}
                 style={{
                   minHeight: '44px',
@@ -63,7 +123,7 @@ export default function Work({ onOpenVideo }) {
                   transition: 'color var(--transition-fast)'
                 }}
               >
-                {cat}
+                {opt.label}
               </button>
             );
           })}
@@ -260,7 +320,14 @@ export default function Work({ onOpenVideo }) {
       {/* Interactive Project Details Modal */}
       <ProjectModal
         project={selectedProject}
-        onClose={() => setSelectedProject(null)}
+        onClose={() => {
+          setSelectedProject(null);
+          if (projectIdQuery) {
+            const next = {};
+            if (activeFilter && activeFilter !== 'All') next.cat = activeFilter;
+            setSearchParams(next);
+          }
+        }}
         onOpenVideo={onOpenVideo}
       />
 

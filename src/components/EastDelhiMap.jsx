@@ -11,7 +11,7 @@ export default function EastDelhiMap() {
   const mapQuery = encodeURIComponent('Block E, Pandav Nagar, East Delhi, Delhi 110092');
 
   return (
-    <section className="eastdelhi-map-section lucknow-map-section" aria-label="Chitralok Studios East Delhi Location Map">
+    <section className="eastdelhi-map-section lucknow-map-section" aria-label="S&P Chitralok Studios East Delhi Location Map">
       {/* Top Gradient Transition Overlay */}
       <div className="map-gradient-top" />
 
@@ -21,7 +21,7 @@ export default function EastDelhiMap() {
           <div className="map-pulse-dot" />
           <span className="map-badge-tag">STUDIO LOCATION</span>
         </div>
-        <h3 className="map-badge-title">Chitralok Studios</h3>
+        <h3 className="map-badge-title">S&P Chitralok Studios</h3>
         <p className="map-badge-desc">
           Block E, Pandav Nagar,<br />
           East Delhi – 110092
@@ -31,7 +31,7 @@ export default function EastDelhiMap() {
           target="_blank"
           rel="noopener noreferrer"
           className="map-open-link"
-          aria-label="Open Chitralok Studios address in Google Maps"
+          aria-label="Open S&P Chitralok Studios address in Google Maps"
         >
           Open in Google Maps ↗
         </a>
@@ -40,7 +40,7 @@ export default function EastDelhiMap() {
       {/* Interactive Google Map Embed */}
       <div className="map-iframe-container">
         <iframe
-          title={`Chitralok Studios — ${fullAddress}`}
+          title={`S&P Chitralok Studios — ${fullAddress}`}
           className="eastdelhi-map-iframe lucknow-map-iframe"
           src={`https://maps.google.com/maps?q=${mapQuery}&t=&z=16&ie=UTF8&iwloc=&output=embed`}
           loading="lazy"

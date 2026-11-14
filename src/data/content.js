@@ -1,29 +1,29 @@
 /**
- * Chitralok Studios — Centralized Content & Media Data
+ * S&P Chitralok Studios — Centralized Content & Media Data
  * Inspired by high-end production houses (Dharma 2.0 aesthetic)
  */
 
 export const siteData = {
   brand: {
-    name: 'Chitralok Studios',
+    name: 'S&P Chitralok Studios',
     monogram: 'CS',
-    fullName: 'Chitralok Studios',
+    fullName: 'S&P Chitralok Studios',
     logo: '/assets/images/logo.webp',
     tagline: 'We ideate, produce, collaborate, engage and deliver best-in-class audiovisuals.',
     subTagline: 'We make films people remember.',
     address: '24/3, 24/4 & 24/5, 3rd Floor, Block E, Pandav Nagar, East Delhi – 110092',
     addressLines: [
-      'S & P Chitralok Studios',
+      'S&P Chitralok Studios',
       '24/3, 24/4 & 24/5, 3rd Floor,',
       'Block E, Pandav Nagar,',
       'East Delhi – 110092'
     ],
     phone: '+91 6394-177916',
-    email: 'acc.spchitralok@gmail.com',
+    email: 'spchitralok@gmail.com',
     emails: {
-      projects: 'acc.spchitralok@gmail.com',
-      general: 'acc.spchitralok@gmail.com',
-      careers: 'acc.spchitralok@gmail.com'
+      projects: 'spchitralok@gmail.com',
+      general: 'spchitralok@gmail.com',
+      careers: 'spchitralok@gmail.com'
     },
     socials: [
       { name: 'Instagram', url: 'https://www.instagram.com/chitralokstudios.sp/' },
@@ -61,7 +61,7 @@ export const siteData = {
   story: {
     badge: 'Our Story',
     title: 'A director’s vision, backed by a producer’s iron discipline.',
-    statement: 'Chitralok Studios is an independent Indian production powerhouse. From high-stakes television commercials to critically acclaimed feature films and digital series, we build frames that linger in memory.',
+    statement: 'S&P Chitralok Studios is an independent Indian production powerhouse. From high-stakes television commercials to critically acclaimed feature films and digital series, we build frames that linger in memory.',
     linkText: 'Explore Our Story'
   },
 
@@ -739,7 +739,7 @@ export const siteData = {
     headingAccent: 'cinema',
     headingPart2: 'as craft first: every frame planned, every story earned.',
     bannerImg: '/assets/images/about.png',
-    p1: 'Chitralok Studios began with one camera, a tight-knit unit, and an uncompromising belief: stories from India deserve the discipline and artistic depth of world cinema. Today, we stand as a premier creative production hub headquartered in East Delhi.',
+    p1: 'S&P Chitralok Studios began with one camera, a tight-knit unit, and an uncompromising belief: stories from India deserve the discipline and artistic depth of world cinema. Today, we stand as a premier creative production hub headquartered in East Delhi.',
     p2: 'We are celebrated for commercial advertising that carries the soul and patience of auteur cinema, and independent productions executed with international commercial rigor. Our core directors, DoPs, sound engineers, and post-production artists collaborate like a synchronized orchestra.',
     steps: [
       { n: '01', title: 'Develop', text: 'Script treatments, storyboards, creative briefs and tone boards fine-tuned until the cinematic vision is razor sharp.' },
@@ -869,6 +869,39 @@ export const siteData = {
       }
     ]
   },
+
+  boardOfDirectors: [
+    {
+      id: 1,
+      name: 'AMOD KUMAR SINGH',
+      role: 'Director',
+      company: 'S&P Chitralok Studios',
+      monogram: 'AS',
+      img: '/assets/images/producers/producer_amod.webp',
+      vision: 'Pioneering cutting-edge cinematic storytelling with unwavering dedication to craft, strategic leadership, and creative integrity.',
+      bio: 'Leading strategic vision and institutional governance at S&P Chitralok Studios, championing transformative storytelling and world-class production value.'
+    },
+    {
+      id: 2,
+      name: 'PAWAN KUMAR',
+      role: 'Director',
+      company: 'S&P Chitralok Studios',
+      monogram: 'PK',
+      img: '/assets/images/producers/producer_pawan.webp',
+      vision: 'Fostering cultural authenticity and cinematic scale that leaves an enduring legacy in Indian cinema and global entertainment.',
+      bio: 'Steering high-impact production operations and creative development, dedicated to bringing socially grounded narratives to life on screen.'
+    },
+    {
+      id: 3,
+      name: 'KRISHNA PANDEY',
+      role: 'Director',
+      company: 'S&P Chitralok Studios',
+      monogram: 'KP',
+      img: '/assets/images/producers/producer_krishnakant.webp',
+      vision: 'Driving visionary collaborations, institutional growth, and technical excellence from script development to theatrical release.',
+      bio: 'Championing institutional partnerships, technical infrastructure, and groundbreaking audiovisual ventures that expand cinematic frontiers.'
+    }
+  ],
 
   director: {
     nameFirst: 'Pushpendra',
@@ -1029,7 +1062,7 @@ export const siteData = {
     quote: '“Acting is not merely performing; it is a sacred act of stepping into the soul of another human being and defending their truth without judgment.”',
     bio1: 'Prragati Chauhaan is an Indian actress, model, and screen narrative architect recognized for her nuanced character immersion, raw emotional gravity, and dedication to socially grounded Indian cinema. Emerging with a compelling artistic voice, she seamlessly bridges performance with narrative depth.',
     bio2: 'In the landmark social feature film "Paid Palki", presented by S&P Chitralok Studios, Prragati headlines as the central protagonist "Kemli" — a sheltered tribal girl whose transformation from vulnerability to fierce dignity forms the emotional core of the film. Beyond commanding the screen in front of the lens, Prragati co-penned the screenplay alongside director Pushpendra Singh, crafting authentic regional dialogues and profound female character arcs.',
-    bio3: 'As a creative pillar and narrative lead at Chitralok Studios, Prragati champions fearless storytelling that reflects the complexities of contemporary and rural India, striving to create cinematic art that lingers in the hearts of audiences worldwide.',
+    bio3: 'As a creative pillar and narrative lead at S&P Chitralok Studios, Prragati champions fearless storytelling that reflects the complexities of contemporary and rural India, striving to create cinematic art that lingers in the hearts of audiences worldwide.',
     filmography: [
       {
         year: 'Purani Dili Talkies',

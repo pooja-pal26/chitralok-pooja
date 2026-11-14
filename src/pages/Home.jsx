@@ -103,7 +103,7 @@ export default function Home({ onOpenVideo }) {
               {/* Crisp Main Visual (Cinematic Cover on Desktop, Complete 100% Contain on Mobile) */}
               <img
                 src={slide.bgImage}
-                alt={`Chitralok Studios Visual ${slide.id}`}
+                alt={`S&P Chitralok Studios Visual ${slide.id}`}
                 className="hero-slide-main"
                 style={{
                   position: 'absolute',

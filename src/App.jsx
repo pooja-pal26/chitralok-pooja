@@ -12,6 +12,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Work from './pages/Work';
 import Director from './pages/Director';
+import Directors from './pages/Directors';
 import ActorProfile from './pages/ActorProfile';
 import Contact from './pages/Contact';
 
@@ -80,6 +81,9 @@ export default function App() {
             <Route path="/" element={<Home onOpenVideo={handleOpenVideo} />} />
             <Route path="/about" element={<About />} />
             <Route path="/work" element={<Work onOpenVideo={handleOpenVideo} />} />
+            <Route path="/work/films" element={<Work onOpenVideo={handleOpenVideo} />} />
+            <Route path="/work/serials" element={<Work onOpenVideo={handleOpenVideo} />} />
+            <Route path="/directors" element={<Directors />} />
             <Route path="/director" element={<Director onOpenVideo={handleOpenVideo} />} />
             <Route path="/actor/prragati-chauhaan" element={<ActorProfile onOpenVideo={handleOpenVideo} isEmbed={false} />} />
             <Route path="/prragati-chauhaan" element={<ActorProfile onOpenVideo={handleOpenVideo} isEmbed={false} />} />

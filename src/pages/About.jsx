@@ -13,13 +13,25 @@ function TeamCard({ person, objectPosition = 'center top', compactCredit = false
   return (
     <div className="visionary-card">
       <div className="visionary-card-media">
-        <img
-          src={person.img}
-          alt={person.name}
-          loading="lazy"
-          className="visionary-card-img"
-          style={{ objectPosition }}
-        />
+        {actionLink ? (
+          <Link to={actionLink.to} style={{ display: 'block', width: '100%', height: '100%' }}>
+            <img
+              src={person.img}
+              alt={person.name}
+              loading="lazy"
+              className="visionary-card-img"
+              style={{ objectPosition }}
+            />
+          </Link>
+        ) : (
+          <img
+            src={person.img}
+            alt={person.name}
+            loading="lazy"
+            className="visionary-card-img"
+            style={{ objectPosition }}
+          />
+        )}
         <div style={{
           position: 'absolute',
           inset: 0,
@@ -29,9 +41,17 @@ function TeamCard({ person, objectPosition = 'center top', compactCredit = false
       </div>
 
       <div className="visionary-card-body">
-        <h3 style={{ margin: 0, fontFamily: 'var(--font-serif)', fontSize: '22px', fontWeight: 600, color: 'var(--text-primary)', lineHeight: 1.2 }}>
-          {person.name}
-        </h3>
+        {actionLink ? (
+          <Link to={actionLink.to} style={{ textDecoration: 'none' }}>
+            <h3 style={{ margin: 0, fontFamily: 'var(--font-serif)', fontSize: '22px', fontWeight: 600, color: 'var(--text-primary)', lineHeight: 1.2 }}>
+              {person.name}
+            </h3>
+          </Link>
+        ) : (
+          <h3 style={{ margin: 0, fontFamily: 'var(--font-serif)', fontSize: '22px', fontWeight: 600, color: 'var(--text-primary)', lineHeight: 1.2 }}>
+            {person.name}
+          </h3>
+        )}
         {roleLabel && (
           <span style={{ fontSize: '11px', fontFamily: 'var(--font-mono)', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--gold-primary)' }}>
             {roleLabel}
@@ -137,7 +157,7 @@ export default function About() {
         <div className="about-banner-frame">
           <img
             src={about.bannerImg}
-            alt="Chitralok Studios Production Studio"
+            alt="S&P Chitralok Studios Production Studio"
             style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
           />
         </div>
@@ -181,7 +201,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Studio Leadership & Visionaries Behind Chitralok */}
+      {/* Studio Leadership & Visionaries Behind S&P Chitralok Studios */}
       <section className="about-roster-section">
         <div className="about-roster-header">
           <div>
@@ -197,7 +217,7 @@ export default function About() {
               lineHeight: 1.08,
               color: 'var(--text-primary)'
             }}>
-              The Visionaries Behind <span style={{ fontStyle: 'italic', color: 'var(--gold-primary)' }}>Chitralok.</span>
+              The Visionaries Behind <span style={{ fontStyle: 'italic', color: 'var(--gold-primary)' }}>S&P Chitralok Studios.</span>
             </h2>
           </div>
           <span style={{ fontSize: '14px', color: 'var(--text-secondary)', letterSpacing: '0.04em', maxWidth: '380px' }}>
@@ -234,7 +254,7 @@ export default function About() {
               <TeamCard
                 key={idx}
                 person={director}
-                actionLink={director.path ? { to: director.path, label: 'View Archive →', variant: 'underline' } : null}
+                actionLink={director.path ? { to: director.path, label: 'Explore Directorial Archive', variant: 'button' } : null}
               />
             ))}
           </div>
