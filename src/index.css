@@ -2772,15 +2772,7 @@ button {
     font-size: 20px;
   }
 
-.hero-side-vignettes {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, rgba(7, 7, 7, 0.88) 0%, rgba(7, 7, 7, 0) 20%, rgba(7, 7, 7, 0) 80%, rgba(7, 7, 7, 0.88) 100%);
-  pointer-events: none;
-  z-index: 3;
-}
-
-  /* Mobile Hero: Clean Cinematic Aspect Ratio & 100% Poster Visibility without Text Cropping */
+  /* Mobile Hero: Clean Cinematic Aspect Ratio & 100% Poster Visibility without Shadows or Cropping */
   .hero-carousel-section {
     min-height: auto !important;
     height: auto !important;
@@ -2788,6 +2780,7 @@ button {
     margin-top: 0 !important;
     padding-bottom: 24px !important;
     justify-content: flex-start !important;
+    box-shadow: none !important;
   }
 
   .hero-visual-frame {
@@ -2800,18 +2793,12 @@ button {
     max-height: none !important;
     overflow: hidden !important;
     background: #070707 !important;
+    box-shadow: none !important;
   }
 
+  /* Remove all shadows/overlays from mobile slider to keep original crisp artwork */
   .hero-slide-ambient {
-    display: block !important;
-    position: absolute !important;
-    inset: -15px !important;
-    width: calc(100% + 30px) !important;
-    height: calc(100% + 30px) !important;
-    object-fit: cover !important;
-    filter: blur(28px) brightness(0.28) !important;
-    opacity: 0.8 !important;
-    pointer-events: none !important;
+    display: none !important;
   }
 
   .hero-slide-main {
@@ -2823,6 +2810,7 @@ button {
     object-position: center center !important;
     transform: none !important;
     filter: none !important;
+    box-shadow: none !important;
   }
 
   .hero-visual-gradient {
@@ -2858,6 +2846,7 @@ button {
     background: rgba(10, 10, 9, 0.45) !important;
     border-color: rgba(212, 166, 42, 0.35) !important;
     backdrop-filter: blur(4px) !important;
+    box-shadow: none !important;
   }
 
   .hero-arrow-nav button svg {
