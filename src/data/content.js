@@ -39,12 +39,12 @@ export const siteData = {
     headlineMain: 'people',
     headlineAccent: 'remember.',
     manifesto: 'We ideate, produce, collaborate, engage and deliver best-in-class audiovisuals for cinema, OTT and global brands.',
-    bgImage: '/assets/images/Paid Palki_ A Rural Love Story journey.png?v=3',
+    bgImage: '/assets/images/Paid Palki_ A Rural Love Story journey.png',
     slides: [
       {
         id: 1,
-        bgImage: '/assets/images/Paid Palki_ A Rural Love Story journey.png?v=3',
-        posterImg: '/assets/images/Paid Palki_ A Rural Love Story journey.png?v=3',
+        bgImage: '/assets/images/Paid Palki_ A Rural Love Story journey.png',
+        posterImg: '/assets/images/Paid Palki_ A Rural Love Story journey.png',
         subTag: 'Feature Film · In Filming'
       },
       {
@@ -100,13 +100,13 @@ export const siteData = {
     {
       id: 1,
       title: 'Paid Palki',
-      posterImg: '/assets/images/Paid Palki_ A Rural Love Story journey.png?v=3',
+      posterImg: '/assets/images/Paid Palki_ A Rural Love Story journey.png',
       client: 'S&P Chitralok Studios',
       credit: 'Writer & Dir. Pushpenddra Singh',
       cat: 'Film',
       year: 'In Filming',
       status: 'In Filming',
-      img: '/assets/images/Paid Palki_ A Rural Love Story journey.png?v=3'
+      img: '/assets/images/Paid Palki_ A Rural Love Story journey.png'
     },
     {
       id: 2,
@@ -200,7 +200,7 @@ export const siteData = {
       id: 1,
       cat: 'Film',
       title: 'Paid Palki',
-      posterImg: '/assets/images/Paid Palki_ A Rural Love Story journey.png?v=3',
+      posterImg: '/assets/images/Paid Palki_ A Rural Love Story journey.png',
       client: 'S&P Chitralok Studios',
       credit: 'Writer & Dir. Pushpenddra Singh',
       year: 'In Filming',
@@ -213,8 +213,8 @@ export const siteData = {
       screenplay: 'Pushpendrra Singh & Prragati Chauhaan',
       dialogues: 'Shashank Singh',
       dop: 'Shashank Sahu',
-      img: '/assets/images/Paid Palki_ A Rural Love Story journey.png?v=3',
-      bannerImg: '/assets/images/Paid Palki_ A Rural Love Story journey.png?v=3',
+      img: '/assets/images/Paid Palki_ A Rural Love Story journey.png',
+      bannerImg: '/assets/images/Paid Palki_ A Rural Love Story journey.png',
       synopsis: 'Set in the heart of rural Madhya Pradesh, Santu, an unmarried young man facing societal pressure, is persuaded to buy a bride from a remote tribal settlement. Captivated by Kemli, a sheltered tribal girl, he brings her home where genuine affection blossoms between them. But when Kemli’s family forcibly takes her back, Santu embarks on an emotional struggle to reunite with the woman he loves—a powerful story of love emerging from exploitation and the courage to challenge human trafficking.',
       stills: [
         { img: '/assets/images/paid_palki_poster.webp', title: 'Official Theatrical 1-Sheet Poster', tag: 'Theatrical Art' },
@@ -546,9 +546,9 @@ export const siteData = {
       director: 'Associate Dir. Pushpendra Singh',
       studio: 'STAR One & Balaji Telefilms',
       milestone: 'Beloved 200+ Episode Romantic Comedy',
-      posterImg: '/assets/images/kyaa_hoga_nimmo_kaa.webp?v=3',
-      img: '/assets/images/kyaa_hoga_nimmo_kaa.webp?v=3',
-      bannerImg: '/assets/images/kyaa_hoga_nimmo_kaa.webp?v=3',
+      posterImg: '/assets/images/kyaa_hoga_nimmo_kaa.webp?v=2',
+      img: '/assets/images/kyaa_hoga_nimmo_kaa.webp?v=2',
+      bannerImg: '/assets/images/kyaa_hoga_nimmo_kaa.webp?v=2',
       synopsis: 'A cheerful romantic comedy tracing the life of Nimmo, a charming middle-class girl with perpetual bad luck, whose unexpected arrangement with high-flying billionaire Kunal Sehgal evolves into genuine tenderness.',
       stills: [
         { img: '/assets/images/kyaa_hoga_nimmo_kaa.webp', title: 'Nimmo & Kunal Sehgal Humorous Moment', tag: '1280x720 HD Broadcast' },
@@ -926,7 +926,7 @@ export const siteData = {
         kind: 'Feature Film (Writer & Director)',
         network: 'S&P Chitralok Studios',
         role: 'Writer & Director',
-        img: '/assets/images/Paid Palki_ A Rural Love Story journey.png?v=3'
+        img: '/assets/images/Paid Palki_ A Rural Love Story journey.png'
       },
       {
         year: '2005',
@@ -1014,7 +1014,7 @@ export const siteData = {
         kind: 'Comedy Drama Series',
         network: 'STAR One / Balaji Telefilms',
         role: 'Associate Director',
-        img: '/assets/images/kyaa_hoga_nimmo_kaa.webp?v=3'
+        img: '/assets/images/kyaa_hoga_nimmo_kaa.webp?v=2'
       }
     ],
     awards: [

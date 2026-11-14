@@ -101,7 +101,7 @@ export default function Home({ onOpenVideo }) {
           {/* Background Visual Carousel: Stacked Crossfading Images */}
           {heroSlides.map((slide, idx) => (
             <React.Fragment key={slide.id}>
-              {/* Ambient Blurred Background (Cinema Backdrop Glow) */}
+              {/* Ambient Blurred Background (Desktop Glow) */}
               <img
                 src={slide.bgImage}
                 alt=""
@@ -109,20 +109,20 @@ export default function Home({ onOpenVideo }) {
                 className="hero-slide-ambient"
                 style={{
                   position: 'absolute',
-                  inset: '-25px',
-                  width: 'calc(100% + 50px)',
-                  height: 'calc(100% + 50px)',
+                  inset: '-20px',
+                  width: 'calc(100% + 40px)',
+                  height: 'calc(100% + 40px)',
                   objectFit: 'cover',
                   objectPosition: 'center',
                   filter: 'blur(36px) brightness(0.35)',
-                  opacity: activeSlide === idx ? 0.9 : 0,
+                  opacity: activeSlide === idx ? 1 : 0,
                   transition: 'opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1)',
                   pointerEvents: 'none',
-                  display: 'block'
+                  display: 'none'
                 }}
               />
 
-              {/* Crisp 100% High-Definition Main Visual (Full Uncut on Desktop & Mobile) */}
+              {/* Crisp Main Visual (Cinematic Cover on Desktop, Complete 100% Contain on Mobile) */}
               <img
                 src={slide.bgImage}
                 alt={`S&P Chitralok Studios Visual ${slide.id}`}
@@ -132,16 +132,36 @@ export default function Home({ onOpenVideo }) {
                   inset: 0,
                   width: '100%',
                   height: '100%',
-                  objectFit: 'contain',
-                  objectPosition: 'center center',
-                  filter: 'none',
+                  objectFit: 'cover',
+                  objectPosition: 'center top',
+                  filter: isScrolledDown ? 'brightness(0.68)' : 'brightness(0.92)',
                   opacity: activeSlide === idx ? 1 : 0,
-                  transition: 'opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1)',
+                  transform: activeSlide === idx ? 'scale(1)' : 'scale(1.05)',
+                  transition: 'opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1), transform 8s ease-out, filter 0.8s ease',
                   pointerEvents: 'none'
                 }}
               />
             </React.Fragment>
           ))}
+
+          <div className="hero-visual-gradient" style={{
+            position: 'absolute',
+            inset: 0,
+            background: isScrolledDown
+              ? 'linear-gradient(180deg, rgba(7,7,7,0.35) 0%, rgba(7,7,7,0.88) 100%)'
+              : 'linear-gradient(180deg, rgba(7,7,7,0.08) 0%, rgba(7,7,7,0.45) 100%)',
+            transition: 'background 0.8s ease',
+            pointerEvents: 'none'
+          }} />
+
+          {/* Left & Right Cinematic Edge Fade Vignettes (Like Hero 2) */}
+          <div className="hero-side-vignettes" style={{
+            position: 'absolute',
+            inset: 0,
+            background: 'linear-gradient(90deg, rgba(7,7,7,0.88) 0%, rgba(7,7,7,0) 20%, rgba(7,7,7,0) 80%, rgba(7,7,7,0.88) 100%)',
+            pointerEvents: 'none',
+            zIndex: 3
+          }} />
 
           {/* Carousel Navigation Arrow Buttons (Floating on sides) */}
           <div className="hero-arrow-nav" style={{
@@ -518,7 +538,7 @@ export default function Home({ onOpenVideo }) {
                     pointerEvents: 'none'
                   }}
                 />
-                {/* 100% Full Uncut High-Definition Main Image */}
+                {/* 100% Full Uncut Main Image */}
                 <img
                   src={work.img}
                   alt={work.title}
@@ -529,7 +549,6 @@ export default function Home({ onOpenVideo }) {
                     height: '100%',
                     objectFit: 'contain',
                     objectPosition: 'center',
-                    imageRendering: '-webkit-optimize-contrast',
                     transition: 'transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)'
                   }}
                 />

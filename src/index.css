@@ -2823,7 +2823,6 @@ button {
     object-position: center center !important;
     transform: none !important;
     filter: none !important;
-    image-rendering: -webkit-optimize-contrast !important;
   }
 
   .hero-visual-gradient {

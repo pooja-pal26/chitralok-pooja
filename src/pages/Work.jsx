@@ -185,7 +185,7 @@ export default function Work({ onOpenVideo }) {
                       pointerEvents: 'none'
                     }}
                   />
-                  {/* 100% Full Uncut High-Definition Main Image */}
+                  {/* 100% Full Uncut Main Image */}
                   <img
                     src={cardImg}
                     alt={work.title}
@@ -197,7 +197,6 @@ export default function Work({ onOpenVideo }) {
                       height: '100%',
                       objectFit: 'contain',
                       objectPosition: 'center',
-                      imageRendering: '-webkit-optimize-contrast',
                       transition: 'transform 0.45s cubic-bezier(0.16, 1, 0.3, 1)'
                     }}
                     loading="lazy"

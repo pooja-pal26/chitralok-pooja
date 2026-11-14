@@ -317,7 +317,7 @@ export default function Director({ onOpenVideo }) {
                     pointerEvents: 'none'
                   }}
                 />
-                {/* 100% Full Uncut High-Definition Main Image */}
+                {/* 100% Full Uncut Main Image */}
                 <img
                   src={item.img}
                   alt={item.title}
@@ -328,7 +328,6 @@ export default function Director({ onOpenVideo }) {
                     height: '100%',
                     objectFit: 'contain',
                     objectPosition: 'center',
-                    imageRendering: '-webkit-optimize-contrast',
                     transition: 'transform 0.4s ease'
                   }}
                   loading="lazy"
