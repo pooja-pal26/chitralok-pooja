@@ -33,7 +33,7 @@ export default function Directors() {
           lineHeight: 0.94,
           letterSpacing: '-0.035em'
         }}>
-          <span style={{ fontStyle: 'italic', color: 'var(--gold-primary)' }}>Directors.</span>
+          <span style={{ fontStyle: 'italic', color: 'var(--gold-primary)' }}>Directors</span>
         </h1>
 
         {/* <p style={{ margin: 0, maxWidth: '680px', fontSize: '19px', lineHeight: 1.65, color: 'var(--text-light-sub)' }}>
@@ -94,53 +94,6 @@ export default function Directors() {
                   background: 'linear-gradient(180deg, rgba(7,7,7,0.05) 0%, rgba(7,7,7,0.3) 55%, rgba(7,7,7,0.92) 100%)',
                   pointerEvents: 'none'
                 }} />
-
-                {/* Monogram Tag Badge */}
-                <div style={{
-                  position: 'absolute',
-                  top: '16px',
-                  right: '16px',
-                  padding: '4px 10px',
-                  background: 'rgba(7, 7, 7, 0.75)',
-                  backdropFilter: 'blur(10px)',
-                  border: '1px solid rgba(212, 166, 42, 0.35)',
-                  borderRadius: '20px',
-                  fontFamily: 'var(--font-mono)',
-                  fontSize: '11px',
-                  letterSpacing: '0.15em',
-                  color: 'var(--gold-primary)',
-                  fontWeight: 600
-                }}>
-                  {director.monogram}
-                </div>
-
-                {/* Bottom Role Tag in Media */}
-                <div style={{
-                  position: 'absolute',
-                  bottom: '16px',
-                  left: '20px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '8px'
-                }}>
-                  <span style={{
-                    width: '6px',
-                    height: '6px',
-                    borderRadius: '50%',
-                    background: 'var(--gold-primary)',
-                    boxShadow: '0 0 8px var(--gold-primary)'
-                  }} />
-                  <span style={{
-                    fontFamily: 'var(--font-mono)',
-                    fontSize: '11px',
-                    letterSpacing: '0.18em',
-                    textTransform: 'uppercase',
-                    color: 'var(--gold-primary)',
-                    fontWeight: 600
-                  }}>
-                    {director.role}
-                  </span>
-                </div>
               </div>
 
               {/* Card Information Body */}

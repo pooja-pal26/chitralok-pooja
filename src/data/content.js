@@ -873,8 +873,6 @@ export const siteData = {
     {
       id: 1,
       name: 'AMOD KUMAR SINGH',
-      // company: 'S&P Chitralok Studios',
-      monogram: 'AS',
       img: '/assets/images/producers/producer_amod.webp',
       vision: 'Pioneering cutting-edge cinematic storytelling with unwavering dedication to craft, strategic leadership, and creative integrity.',
       // bio: 'Leading strategic vision and institutional governance at S&P Chitralok Studios, championing transformative storytelling and world-class production value.'
@@ -882,8 +880,6 @@ export const siteData = {
     {
       id: 2,
       name: 'PAWAN KUMAR',
-      // company: 'S&P Chitralok Studios',
-      monogram: 'PK',
       img: '/assets/images/producers/producer_pawan.webp',
       vision: 'Fostering cultural authenticity and cinematic scale that leaves an enduring legacy in Indian cinema and global entertainment.',
       // bio: 'Steering high-impact production operations and creative development, dedicated to bringing socially grounded narratives to life on screen.'
@@ -891,8 +887,6 @@ export const siteData = {
     {
       id: 3,
       name: 'KRISHNA PANDEY',
-      // company: 'S&P Chitralok Studios',
-      monogram: 'KP',
       img: '/assets/images/producers/producer_krishnakant.webp',
       vision: 'Driving visionary collaborations, institutional growth, and technical excellence from script development to theatrical release.',
       // bio: 'Championing institutional partnerships, technical infrastructure, and groundbreaking audiovisual ventures that expand cinematic frontiers.'
@@ -902,8 +896,6 @@ export const siteData = {
   director: {
     nameFirst: 'Pushpendra',
     nameLast: 'Singh',
-    // born: '15 September 1981',
-    // role: 'Television & Film Director',
     portraitImg: '/assets/images/pushpenddra_singh.webp',
     reelImg: '/assets/images/paid_palki_banner.webp',
     imdbUrl: 'https://www.imdb.com/name/nm9362954/',
