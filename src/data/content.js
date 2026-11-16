@@ -126,7 +126,7 @@ export const siteData = {
       credit: 'Second Director: Pushpendra Singh',
       cat: 'Film',
       year: '2005',
-      img: '/assets/images/sarkar_movie_hd.webp',
+      img: '/assets/images/sarkar_movie.webp',
       videoUrl: 'https://www.youtube-nocookie.com/embed/_dGB1MCYvrs?autoplay=1'
     },
     {
@@ -239,7 +239,7 @@ export const siteData = {
       cat: 'Film',
       title: 'Sarkar (Movie)',
       videoUrl: 'https://www.youtube-nocookie.com/embed/_dGB1MCYvrs?autoplay=1',
-      posterImg: '/assets/images/sarkar_movie_poster.webp',
+      posterImg: '/assets/images/sarkar_movie.webp',
       client: 'K Sera Sera / RGV Film Company',
       credit: 'Second Director: Pushpendra Singh',
       year: '2005',
@@ -247,8 +247,8 @@ export const siteData = {
       director: 'Ram Gopal Varma · Second Dir. Pushpendra Singh',
       studio: 'K Sera Sera & RGV Film Company',
       milestone: 'Iconic Indian Cinematic Masterpiece',
-      img: '/assets/images/sarkar_movie_hd.webp',
-      bannerImg: '/assets/images/sarkar_movie_hd.webp',
+      img: '/assets/images/sarkar_movie.webp',
+      bannerImg: '/assets/images/sarkar_movie.webp',
       synopsis: 'The landmark Indian political crime epic inspired by The Godfather, chronicling the reign of patriarch Subhash Nagre, an extra-governmental justice figure in Mumbai, and his younger son Shankar who steps into the crucible to defend the dynasty.',
       stills: [
         { img: '/assets/images/sarkar_movie_hd.webp', title: 'Subhash & Shankar Nagre Council Confrontation', tag: 'Iconic Still' },
@@ -273,7 +273,7 @@ export const siteData = {
       cat: 'Series',
       title: 'Zindagi Ki Mehek',
       videoUrl: 'https://www.youtube-nocookie.com/embed/QtJJqyBz_kE?autoplay=1',
-      posterImg: '/assets/images/pi6.webp',
+      posterImg: '/assets/images/zkm.webp',
       client: 'Zee TV / Parin Multimedia',
       credit: 'Dir. Pushpendra Singh',
       year: '2016-2017',
@@ -281,8 +281,8 @@ export const siteData = {
       director: 'Pushpendra Singh',
       studio: 'Zee TV & Parin Multimedia',
       milestone: '500+ Prime Time Episodes on Zee TV',
-      img: '/assets/images/pi6.webp',
-      bannerImg: '/assets/images/pi6.webp',
+      img: '/assets/images/zkm.webp',
+      bannerImg: '/assets/images/zkm.webp',
       synopsis: 'A groundbreaking prime-time romance drama set against Delhi culinary culture, tracking the clash and electric chemistry between passionate home-cook Mehek and ruthless restaurateur Shaurya Khanna.',
       stills: [
         { img: '/assets/images/zindagi_ki_mehek.webp', title: 'Mehek & Shaurya Dramatic Kitchen Confrontation', tag: 'ZEE5 Master Frame' },
@@ -364,7 +364,7 @@ export const siteData = {
       cat: 'Series',
       title: 'Jai Shri Krishna',
       videoUrl: 'https://www.youtube-nocookie.com/embed/M66qzUIrbo8?autoplay=1',
-      posterImg: '/assets/images/pi1.webp',
+      posterImg: '/assets/images/jaishri-krishna.webp',
       client: 'Colors TV / Sagar Pictures',
       credit: 'Dir. Pushpendra Singh',
       year: '2008-2009',
@@ -372,8 +372,8 @@ export const siteData = {
       director: 'Pushpendra Singh',
       studio: 'Colors TV & Sagar Pictures',
       milestone: 'Top-Rated Colors TV Mythological Flagship',
-      img: '/assets/images/pi1.webp',
-      bannerImg: '/assets/images/pi1.webp',
+      img: '/assets/images/jaishri-krishna.webp',
+      bannerImg: '/assets/images/jaishri-krishna.webp',
       synopsis: 'An exquisite mythological production chronicling the divine bal-leela (childhood miracles), pastoral charms of Vrindavan, and ultimate victory of Lord Krishna over the tyrant Kansa.',
       stills: [
         { img: '/assets/images/jai_shri_krishna.webp', title: 'Little Makhan-Chor Bal Krishna in Vrindavan', tag: '1280x720 HD Master' },
@@ -395,7 +395,7 @@ export const siteData = {
       cat: 'Series',
       title: 'Shakuntala',
       videoUrl: 'https://www.youtube-nocookie.com/embed/5xDr-aE6lmk?autoplay=1',
-      posterImg: '/assets/images/shakuntala1.webp',
+      posterImg: '/assets/images/shakuntala_art.webp',
       client: 'STAR One / Sagar Arts',
       credit: 'Dir. Pushpendra Singh',
       year: '2009',
@@ -403,11 +403,11 @@ export const siteData = {
       director: 'Pushpendra Singh',
       studio: 'STAR One & Sagar Arts',
       milestone: 'Opulent Kalidasa Sanskrit Classic Adaptation',
-      img: '/assets/images/shakuntala1.webp',
-      bannerImg: '/assets/images/shakuntala1.webp',
+      img: '/assets/images/shakuntala_art.webp',
+      bannerImg: '/assets/images/shakuntala_art.webp',
       synopsis: 'A grand visual adaptation of Kalidasa classical Sanskrit masterpiece Abhijnanasakuntalam, narrating the fated love, curse-driven separation, and royal reunion of King Dushyanta and forest maiden Shakuntala.',
       stills: [
-        { img: '/assets/images/shakuntala1.webp', title: 'Princess Shakuntala in Ancient Forest Sanctuary', tag: '1280x720 HD Master' },
+        { img: '/assets/images/shakuntala_art.webp', title: 'Princess Shakuntala in Ancient Forest Sanctuary', tag: '1280x720 HD Master' },
         { img: '/assets/images/bts_camera_rig.webp', title: 'Sagar Arts Mythological Exterior Lighting Rig', tag: 'Camera Rig' }
       ],
       cast: [
@@ -431,12 +431,12 @@ export const siteData = {
       director: 'Pushpendra Singh',
       studio: 'NDTV Imagine & Sagar Arts',
       milestone: 'Critically Acclaimed Biographical Television Drama',
-      posterImg: '/assets/images/meera.webp?v=2',
-      img: '/assets/images/meera.webp?v=2',
-      bannerImg: '/assets/images/meera.webp?v=2',
+      posterImg: '/assets/images/meera_art.webp',
+      img: '/assets/images/meera_art.webp',
+      bannerImg: '/assets/images/meera_art.webp',
       synopsis: 'The inspiring biographical chronicle celebrating 16th-century Rajput princess-poet Meera Bai, whose sublime devotion to Lord Krishna challenged regal tyranny, orthodox society, and mortal threats.',
       stills: [
-        { img: '/assets/images/meera.webp', title: 'Young Meera Bai Divine Bhajan Recital', tag: '1280x720 HD Master' },
+        { img: '/assets/images/meera_art.webp', title: 'Young Meera Bai Divine Bhajan Recital', tag: '1280x720 HD Master' },
         { img: '/assets/images/bts_sound_mixing.webp', title: 'Classical Devotional Scoring Orchestration', tag: 'Music Stage' }
       ],
       cast: [
@@ -453,7 +453,7 @@ export const siteData = {
       cat: 'Series',
       title: 'Kis Desh Mein Hai Meraa Dil',
       videoUrl: 'https://www.youtube-nocookie.com/embed/Ug0exzXM5eY?autoplay=1',
-      posterImg: '/assets/images/pi4.webp',
+      posterImg: '/assets/images/kdmhmd.webp',
       client: 'Star Plus / Balaji Telefilms',
       credit: 'Dir. Pushpendra Singh',
       year: '2008-2010',
@@ -461,8 +461,8 @@ export const siteData = {
       director: 'Pushpendra Singh',
       studio: 'Star Plus & Balaji Telefilms',
       milestone: '444 Episodes & Historic Prime-Time Hit',
-      img: '/assets/images/pi4.webp',
-      bannerImg: '/assets/images/pi4.webp',
+      img: '/assets/images/kdmhmd.webp',
+      bannerImg: '/assets/images/kdmhmd.webp',
       synopsis: 'A sweeping cross-border romance depicting unconditional devotion and personal sacrifice. It notably introduced Sushant Singh Rajput in his television acting debut as the beloved younger brother Preet Juneja.',
       stills: [
         { img: '/assets/images/kis_desh_mein_hai_meraa_dil.webp', title: 'Sushant Singh Rajput Debut Scene as Preet Juneja', tag: '1280x720 HD Debut Frame' },
@@ -489,12 +489,12 @@ export const siteData = {
       director: 'Pushpendra Singh',
       studio: 'Sony TV & Balaji Telefilms',
       milestone: 'Prime Time Sony TV Romantic Comedy',
-      posterImg: '/assets/images/kuch is trh.webp',
-      img: '/assets/images/kuch is trh.webp',
-      bannerImg: '/assets/images/kuch is trh.webp',
+      posterImg: '/assets/images/kit.webp',
+      img: '/assets/images/kit.webp',
+      bannerImg: '/assets/images/kit.webp',
       synopsis: 'A witty, lighthearted romantic comedy chronicling Kanya Godbole, an optimistic girl living with a split identity condition who finds herself in a whirlwind contract marriage within the elite Nanda business empire.',
       stills: [
-        { img: '/assets/images/kuch is trh.webp', title: 'Kanya Godbole & Ranbir Nanda Wedding Sequence', tag: '1280x720 HD Broadcast' },
+        { img: '/assets/images/kit.webp', title: 'Kanya Godbole & Ranbir Nanda Wedding Sequence', tag: '1280x720 HD Broadcast' },
         { img: '/assets/images/bts_rehearsal.webp', title: 'Studio Rehearsal & Comic Timing Session', tag: 'Rehearsal' }
       ],
       cast: [
@@ -517,12 +517,12 @@ export const siteData = {
       director: 'Pushpendra Singh',
       studio: 'Zee TV & Siddhant Cinevision',
       milestone: 'Critically Acclaimed Shobhaa De Political Drama',
-      posterImg: '/assets/images/sarkar.webp?v=2',
-      img: '/assets/images/sarkar.webp?v=2',
-      bannerImg: '/assets/images/sarkar.webp?v=2',
+      posterImg: '/assets/images/ss.webp',
+      img: '/assets/images/ss.webp',
+      bannerImg: '/assets/images/ss.webp',
       synopsis: 'A gripping political drama serial penned by Shobhaa De exploring power dynamics, electoral stratagems, and backroom political betrayals within a prominent political dynasty headed by matriarch Priyamvada.',
       stills: [
-        { img: '/assets/images/sarkar.webp', title: 'Political Matriarch Priyamvada in Heated Debate', tag: '1280x720 HD Broadcast' },
+        { img: '/assets/images/ss.webp', title: 'Political Matriarch Priyamvada in Heated Debate', tag: '1280x720 HD Broadcast' },
         { img: '/assets/images/bts_camera_rig.webp', title: 'Siddhant Cinevision Political Chamber Lighting', tag: 'Studio Rig' }
       ],
       cast: [
@@ -545,12 +545,12 @@ export const siteData = {
       director: 'Associate Dir. Pushpendra Singh',
       studio: 'STAR One & Balaji Telefilms',
       milestone: 'Beloved 200+ Episode Romantic Comedy',
-      posterImg: '/assets/images/kyaa_hoga_nimmo_kaa.webp?v=2',
-      img: '/assets/images/kyaa_hoga_nimmo_kaa.webp?v=2',
-      bannerImg: '/assets/images/kyaa_hoga_nimmo_kaa.webp?v=2',
+      posterImg: '/assets/images/khnk.webp',
+      img: '/assets/images/khnk.webp',
+      bannerImg: '/assets/images/khnk.webp',
       synopsis: 'A cheerful romantic comedy tracing the life of Nimmo, a charming middle-class girl with perpetual bad luck, whose unexpected arrangement with high-flying billionaire Kunal Sehgal evolves into genuine tenderness.',
       stills: [
-        { img: '/assets/images/kyaa_hoga_nimmo_kaa.webp', title: 'Nimmo & Kunal Sehgal Humorous Moment', tag: '1280x720 HD Broadcast' },
+        { img: '/assets/images/khnk.webp', title: 'Nimmo & Kunal Sehgal Humorous Moment', tag: '1280x720 HD Broadcast' },
         { img: '/assets/images/bts_film_set.webp', title: 'Balaji Telefilms Star One Comedy Stage', tag: 'Behind the Scenes' }
       ],
       cast: [
@@ -565,7 +565,7 @@ export const siteData = {
       id: 4,
       cat: 'Ad Film',
       title: 'Aurum Jewels — The Golden Hour',
-      posterImg: '/assets/images/aurum_jewels.webp',
+      posterImg: '/assets/images/Aurum-jewels.webp',
       client: 'Aurum Jewels',
       credit: 'Dir. Pushpendra Singh',
       year: '2025',
@@ -573,8 +573,8 @@ export const siteData = {
       director: 'Pushpendra Singh',
       studio: 'Aurum Brand Studios & Chitralok Films',
       milestone: 'High-Fashion Royal Brand Campaign',
-      img: '/assets/images/aurum_jewels_hd.webp',
-      bannerImg: '/assets/images/aurum_jewels_hd.webp',
+      img: '/assets/images/Aurum-jewels.webp',
+      bannerImg: '/assets/images/Aurum-jewels.webp',
       synopsis: 'A high-concept commercial campaign capturing timeless royal heritage and immaculate gold craftsmanship. Directed by Pushpendra Singh, utilizing anamorphic lenses and soft golden-hour natural illumination.',
       stills: [
         { img: '/assets/images/aurum_jewels_hd.webp', title: 'The Golden Hour 16:9 Widescreen Frame', tag: 'Commercial Master' },
@@ -893,51 +893,27 @@ export const siteData = {
       },
       {
         year: '2005',
-        title: 'Sarkar (Movie)',
-        kind: 'Feature Film (Second Director)',
-        network: 'RGV Film Company / Theatrical',
-        role: 'Second Director',
-        img: '/assets/images/sarkar_movie_poster.webp'
+        title: 'Sarkar (Movie)', kind: 'Feature Film (Second Director)', network: 'RGV Film Company / Theatrical', role: 'Second Director', img: '/assets/images/sarkar_movie.webp'
       },
       {
         year: '2017',
-        title: 'Zindagi Ki Mehek',
-        kind: 'Television Series',
-        network: 'Zee TV',
-        role: 'Director',
-        img: '/assets/images/pi6.webp'
+        title: 'Zindagi Ki Mehek', kind: 'Television Series', network: 'Zee TV', role: 'Director', img: '/assets/images/zkm.webp'
       },
       {
         year: '2011',
-        title: 'Kuchh Is Tara',
-        kind: 'Television Series',
-        network: 'Sony Entertainment TV / Balaji',
-        role: 'Director',
-        img: '/assets/images/kuch is trh.webp'
+        title: 'Kuchh Is Tara', kind: 'Television Series', network: 'Sony Entertainment TV / Balaji', role: 'Director', img: '/assets/images/kit.webp'
       },
       {
         year: '2009',
-        title: 'Meera',
-        kind: 'Mythological Series',
-        network: 'NDTV Imagine / Sagar Arts',
-        role: 'Director',
-        img: '/assets/images/meera.webp?v=2'
+        title: 'Meera', kind: 'Mythological Series', network: 'NDTV Imagine / Sagar Arts', role: 'Director', img: '/assets/images/meera_art.webp'
       },
       {
         year: '2008–2009',
-        title: 'Shakuntala',
-        kind: 'Mythological Romance',
-        network: 'STAR One / Sagar Arts',
-        role: 'Director',
-        img: '/assets/images/shakuntala1.webp'
+        title: 'Shakuntala', kind: 'Mythological Romance', network: 'STAR One / Sagar Arts', role: 'Director', img: '/assets/images/shakuntala_art.webp'
       },
       {
         year: '2008–2009',
-        title: 'Jai Shri Krishna',
-        kind: 'Mythological Drama',
-        network: 'Colors TV / Sagar Pictures',
-        role: 'Director',
-        img: '/assets/images/pi1.webp'
+        title: 'Jai Shri Krishna', kind: 'Mythological Drama', network: 'Colors TV / Sagar Pictures', role: 'Director', img: '/assets/images/jaishri-krishna.webp'
       },
       {
         year: '2008',
@@ -949,11 +925,7 @@ export const siteData = {
       },
       {
         year: '2008',
-        title: 'Kis Desh Mein Hai Meraa Dil',
-        kind: 'Drama Series',
-        network: 'Star Plus / Balaji Telefilms',
-        role: 'Director',
-        img: '/assets/images/pi4.webp'
+        title: 'Kis Desh Mein Hai Meraa Dil', kind: 'Drama Series', network: 'Star Plus / Balaji Telefilms', role: 'Director', img: '/assets/images/kdmhmd.webp'
       },
       {
         year: '2006',
@@ -965,19 +937,11 @@ export const siteData = {
       },
       {
         year: '2006',
-        title: 'Sarkar',
-        kind: 'Political Family Drama',
-        network: 'Zee TV / Siddhant Cinevision',
-        role: 'Director',
-        img: '/assets/images/sarkar.webp?v=2'
+        title: 'Sarkar', kind: 'Political Family Drama', network: 'Zee TV / Siddhant Cinevision', role: 'Director', img: '/assets/images/ss.webp'
       },
       {
         year: '2006',
-        title: 'Kyaa Hoga Nimmo Kaa',
-        kind: 'Comedy Drama Series',
-        network: 'STAR One / Balaji Telefilms',
-        role: 'Associate Director',
-        img: '/assets/images/kyaa_hoga_nimmo_kaa.webp?v=2'
+        title: 'Kyaa Hoga Nimmo Kaa', kind: 'Comedy Drama Series', network: 'STAR One / Balaji Telefilms', role: 'Associate Director', img: '/assets/images/khnk.webp'
       }
     ],
     awards: [

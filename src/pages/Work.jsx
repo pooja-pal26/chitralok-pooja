@@ -130,7 +130,7 @@ export default function Work({ onOpenVideo }) {
         </div>
       </section>
 
-      {/* Projects Grid — 4 Columns in one row */}
+      {/* Projects Grid — 3 Columns in one row */}
       <section style={{ padding: '0 var(--container-pad) 128px' }}>
         <div className="work-projects-grid">
           {filteredWorks.map((work) => {
@@ -160,32 +160,15 @@ export default function Work({ onOpenVideo }) {
                   transition: 'transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease'
                 }}
               >
-                {/* Poster Frame (3:4 portrait ratio matching Director showcase) */}
+                {/* Poster Frame — 2:1 widescreen ratio matching project artwork */}
                 <div style={{
                   position: 'relative',
-                  aspectRatio: '3/4',
+                  aspectRatio: '2/1',
                   width: '100%',
                   background: '#0a0a09',
                   overflow: 'hidden'
                 }}>
-                  {/* Ambient Blurred Backdrop for Full Artwork Depth */}
-                  <img
-                    src={cardImg}
-                    alt=""
-                    aria-hidden="true"
-                    style={{
-                      position: 'absolute',
-                      inset: '-15px',
-                      width: 'calc(100% + 30px)',
-                      height: 'calc(100% + 30px)',
-                      objectFit: 'cover',
-                      objectPosition: 'center',
-                      filter: 'blur(22px) brightness(0.32)',
-                      opacity: 0.85,
-                      pointerEvents: 'none'
-                    }}
-                  />
-                  {/* 100% Full Uncut Main Image */}
+                  {/* Main Project Image */}
                   <img
                     src={cardImg}
                     alt={work.title}
@@ -195,7 +178,7 @@ export default function Work({ onOpenVideo }) {
                       inset: 0,
                       width: '100%',
                       height: '100%',
-                      objectFit: 'contain',
+                      objectFit: 'cover',
                       objectPosition: 'center',
                       transition: 'transform 0.45s cubic-bezier(0.16, 1, 0.3, 1)'
                     }}

@@ -1702,25 +1702,18 @@ button {
 /* Work Projects Grid — 4 Columns on Desktop matching Director Showcase */
 .work-projects-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 32px 24px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 28px;
 }
 
-@media (max-width: 1200px) {
-  .work-projects-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 28px 20px;
-  }
-}
-
-@media (max-width: 860px) {
+@media (max-width: 960px) {
   .work-projects-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px 16px;
+    gap: 24px 18px;
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 580px) {
   .work-projects-grid {
     grid-template-columns: 1fr;
     gap: 24px;
