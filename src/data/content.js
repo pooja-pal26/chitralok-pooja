@@ -39,18 +39,18 @@ export const siteData = {
     headlineMain: 'people',
     headlineAccent: 'remember.',
     manifesto: 'We ideate, produce, collaborate, engage and deliver best-in-class audiovisuals for cinema, OTT and global brands.',
-    bgImage: '/assets/images/Paid Palki_ A Rural Love Story journey.png',
+    bgImage: '/assets/images/Paid Palki_ A Rural Love Story journey.webp',
     slides: [
       {
         id: 1,
-        bgImage: '/assets/images/Paid Palki_ A Rural Love Story journey.png',
-        posterImg: '/assets/images/Paid Palki_ A Rural Love Story journey.png',
+        bgImage: '/assets/images/Paid Palki_ A Rural Love Story journey.webp',
+        posterImg: '/assets/images/Paid Palki_ A Rural Love Story journey.webp',
         subTag: 'Feature Film · In Filming'
       },
       {
         id: 2,
-        bgImage: '/assets/images/Aaoge Jab Tum_ Musical Sunset Romance (1).png',
-        posterImg: '/assets/images/Aaoge Jab Tum_ Musical Sunset Romance (1).png',
+        bgImage: '/assets/images/Aaoge Jab Tum_ Musical Sunset Romance (1).webp',
+        posterImg: '/assets/images/Aaoge Jab Tum_ Musical Sunset Romance (1).webp',
         subTag: 'Theatrical Release · Post Production'
       }
     ],
@@ -100,24 +100,24 @@ export const siteData = {
     {
       id: 1,
       title: 'Paid Palki',
-      posterImg: '/assets/images/Paid Palki_ A Rural Love Story journey.png',
+      posterImg: '/assets/images/Paid Palki_ A Rural Love Story journey.webp',
       client: 'S&P Chitralok Studios',
       credit: 'Writer & Dir. Pushpenddra Singh',
       cat: 'Film',
       year: 'In Filming',
       status: 'In Filming',
-      img: '/assets/images/Paid Palki_ A Rural Love Story journey.png'
+      img: '/assets/images/Paid Palki_ A Rural Love Story journey.webp'
     },
     {
       id: 2,
       title: 'Aaoge Jab Tum — Feature Film',
-      posterImg: '/assets/images/Aaoge Jab Tum_ Musical Sunset Romance (1).png',
+      posterImg: '/assets/images/Aaoge Jab Tum_ Musical Sunset Romance (1).webp',
       client: 'Little Crew Pictures',
       credit: 'Dir. Pushpenddra Singh',
       cat: 'Film',
       year: 'Post Production',
       status: 'Post Production',
-      img: '/assets/images/Aaoge Jab Tum_ Musical Sunset Romance (1).png'
+      img: '/assets/images/Aaoge Jab Tum_ Musical Sunset Romance (1).webp'
     },
     {
       id: 3,
@@ -136,7 +136,7 @@ export const siteData = {
       credit: 'Dir. Pushpendra Singh',
       cat: 'Series',
       year: '2000-2008',
-      img: '/assets/images/kuki sas bhi bahu thi.png',
+      img: '/assets/images/kuki sas bhi bahu thi.webp',
       videoUrl: 'https://www.youtube-nocookie.com/embed/09UKQGoH2Uk?autoplay=1'
     },
     {
@@ -166,7 +166,7 @@ export const siteData = {
       id: 2,
       cat: 'Film',
       title: 'Aaoge Jab Tum',
-      posterImg: '/assets/images/Aaoge Jab Tum_ Musical Sunset Romance (1).png',
+      posterImg: '/assets/images/Aaoge Jab Tum_ Musical Sunset Romance (1).webp',
       client: 'Little Crew Pictures',
       credit: 'Writer & Dir. Pushpenddra Singh',
       year: 'Post Production',
@@ -179,8 +179,8 @@ export const siteData = {
       screenplay: 'Pushpenddra Singh',
       dialogues: 'Pushpenddra Singh',
       dop: 'Chitralok Cinematography Unit',
-      img: '/assets/images/Aaoge Jab Tum_ Musical Sunset Romance (1).png',
-      bannerImg: '/assets/images/Aaoge Jab Tum_ Musical Sunset Romance (1).png',
+      img: '/assets/images/Aaoge Jab Tum_ Musical Sunset Romance (1).webp',
+      bannerImg: '/assets/images/Aaoge Jab Tum_ Musical Sunset Romance (1).webp',
       synopsis: 'An evocative upcoming directorial feature by Pushpenddra Singh exploring themes of profound longing, destiny, and timeless romance across evocative snow-covered Himalayan landscapes, set against an unforgettable classical music score.',
       stills: [
         { img: '/assets/images/HeroImage2.webp', title: 'Theatrical Landscape Visual Experience', tag: 'Master Key Art' },
@@ -200,7 +200,7 @@ export const siteData = {
       id: 1,
       cat: 'Film',
       title: 'Paid Palki',
-      posterImg: '/assets/images/Paid Palki_ A Rural Love Story journey.png',
+      posterImg: '/assets/images/Paid Palki_ A Rural Love Story journey.webp',
       client: 'S&P Chitralok Studios',
       credit: 'Writer & Dir. Pushpenddra Singh',
       year: 'In Filming',
@@ -213,8 +213,8 @@ export const siteData = {
       screenplay: 'Pushpendrra Singh & Prragati Chauhaan',
       dialogues: 'Shashank Singh',
       dop: 'Shashank Sahu',
-      img: '/assets/images/Paid Palki_ A Rural Love Story journey.png',
-      bannerImg: '/assets/images/Paid Palki_ A Rural Love Story journey.png',
+      img: '/assets/images/Paid Palki_ A Rural Love Story journey.webp',
+      bannerImg: '/assets/images/Paid Palki_ A Rural Love Story journey.webp',
       synopsis: 'Set in the heart of rural Madhya Pradesh, Santu, an unmarried young man facing societal pressure, is persuaded to buy a bride from a remote tribal settlement. Captivated by Kemli, a sheltered tribal girl, he brings her home where genuine affection blossoms between them. But when Kemli’s family forcibly takes her back, Santu embarks on an emotional struggle to reunite with the woman he loves—a powerful story of love emerging from exploitation and the courage to challenge human trafficking.',
       stills: [
         { img: '/assets/images/paid_palki_poster.webp', title: 'Official Theatrical 1-Sheet Poster', tag: 'Theatrical Art' },
@@ -274,7 +274,7 @@ export const siteData = {
       cat: 'Series',
       title: 'Zindagi Ki Mehek',
       videoUrl: 'https://www.youtube-nocookie.com/embed/QtJJqyBz_kE?autoplay=1',
-      posterImg: '/assets/images/pi6.jpg',
+      posterImg: '/assets/images/pi6.webp',
       client: 'Zee TV / Parin Multimedia',
       credit: 'Dir. Pushpendra Singh',
       year: '2016-2017',
@@ -282,8 +282,8 @@ export const siteData = {
       director: 'Pushpendra Singh',
       studio: 'Zee TV & Parin Multimedia',
       milestone: '500+ Prime Time Episodes on Zee TV',
-      img: '/assets/images/pi6.jpg',
-      bannerImg: '/assets/images/pi6.jpg',
+      img: '/assets/images/pi6.webp',
+      bannerImg: '/assets/images/pi6.webp',
       synopsis: 'A groundbreaking prime-time romance drama set against Delhi culinary culture, tracking the clash and electric chemistry between passionate home-cook Mehek and ruthless restaurateur Shaurya Khanna.',
       stills: [
         { img: '/assets/images/zindagi_ki_mehek.webp', title: 'Mehek & Shaurya Dramatic Kitchen Confrontation', tag: 'ZEE5 Master Frame' },
@@ -341,12 +341,12 @@ export const siteData = {
       director: 'Pushpendra Singh',
       studio: 'Star Plus & Balaji Telefilms',
       milestone: 'Record-Breaking 1833 Episodes Culture Shaper',
-      posterImg: '/assets/images/kuki sas bhi bahu thi.png',
-      img: '/assets/images/kuki sas bhi bahu thi.png',
-      bannerImg: '/assets/images/kuki sas bhi bahu thi.png',
+      posterImg: '/assets/images/kuki sas bhi bahu thi.webp',
+      img: '/assets/images/kuki sas bhi bahu thi.webp',
+      bannerImg: '/assets/images/kuki sas bhi bahu thi.webp',
       synopsis: 'The cultural milestone that redefined South Asian entertainment across the globe, chronicling three generations of the grand Virani joint family in Gujarat guided by the moral compass and fortitude of Tulsi Virani.',
       stills: [
-        { img: '/assets/images/kuki sas bhi bahu thi.png', title: 'Tulsi Virani Shanti Niketan Grand Arrival', tag: '1280x720 HD Broadcast' },
+        { img: '/assets/images/kuki sas bhi bahu thi.webp', title: 'Tulsi Virani Shanti Niketan Grand Arrival', tag: '1280x720 HD Broadcast' },
         { img: '/assets/images/bts_film_set.webp', title: 'Virani Haveli Architectural Studio Floor', tag: 'Production Set' },
         { img: '/assets/images/bts_rehearsal.webp', title: 'Grand Ensemble Cast Script Coordination', tag: 'Cast Rehearsal' }
       ],
@@ -365,7 +365,7 @@ export const siteData = {
       cat: 'Series',
       title: 'Jai Shri Krishna',
       videoUrl: 'https://www.youtube-nocookie.com/embed/M66qzUIrbo8?autoplay=1',
-      posterImg: '/assets/images/pi1.jpg',
+      posterImg: '/assets/images/pi1.webp',
       client: 'Colors TV / Sagar Pictures',
       credit: 'Dir. Pushpendra Singh',
       year: '2008-2009',
@@ -373,8 +373,8 @@ export const siteData = {
       director: 'Pushpendra Singh',
       studio: 'Colors TV & Sagar Pictures',
       milestone: 'Top-Rated Colors TV Mythological Flagship',
-      img: '/assets/images/pi1.jpg',
-      bannerImg: '/assets/images/pi1.jpg',
+      img: '/assets/images/pi1.webp',
+      bannerImg: '/assets/images/pi1.webp',
       synopsis: 'An exquisite mythological production chronicling the divine bal-leela (childhood miracles), pastoral charms of Vrindavan, and ultimate victory of Lord Krishna over the tyrant Kansa.',
       stills: [
         { img: '/assets/images/jai_shri_krishna.webp', title: 'Little Makhan-Chor Bal Krishna in Vrindavan', tag: '1280x720 HD Master' },
@@ -396,7 +396,7 @@ export const siteData = {
       cat: 'Series',
       title: 'Shakuntala',
       videoUrl: 'https://www.youtube-nocookie.com/embed/5xDr-aE6lmk?autoplay=1',
-      posterImg: '/assets/images/shakuntala1.jpg',
+      posterImg: '/assets/images/shakuntala1.webp',
       client: 'STAR One / Sagar Arts',
       credit: 'Dir. Pushpendra Singh',
       year: '2009',
@@ -404,11 +404,11 @@ export const siteData = {
       director: 'Pushpendra Singh',
       studio: 'STAR One & Sagar Arts',
       milestone: 'Opulent Kalidasa Sanskrit Classic Adaptation',
-      img: '/assets/images/shakuntala1.jpg',
-      bannerImg: '/assets/images/shakuntala1.jpg',
+      img: '/assets/images/shakuntala1.webp',
+      bannerImg: '/assets/images/shakuntala1.webp',
       synopsis: 'A grand visual adaptation of Kalidasa classical Sanskrit masterpiece Abhijnanasakuntalam, narrating the fated love, curse-driven separation, and royal reunion of King Dushyanta and forest maiden Shakuntala.',
       stills: [
-        { img: '/assets/images/shakuntala1.jpg', title: 'Princess Shakuntala in Ancient Forest Sanctuary', tag: '1280x720 HD Master' },
+        { img: '/assets/images/shakuntala1.webp', title: 'Princess Shakuntala in Ancient Forest Sanctuary', tag: '1280x720 HD Master' },
         { img: '/assets/images/bts_camera_rig.webp', title: 'Sagar Arts Mythological Exterior Lighting Rig', tag: 'Camera Rig' }
       ],
       cast: [
@@ -454,7 +454,7 @@ export const siteData = {
       cat: 'Series',
       title: 'Kis Desh Mein Hai Meraa Dil',
       videoUrl: 'https://www.youtube-nocookie.com/embed/Ug0exzXM5eY?autoplay=1',
-      posterImg: '/assets/images/pi4.jpg',
+      posterImg: '/assets/images/pi4.webp',
       client: 'Star Plus / Balaji Telefilms',
       credit: 'Dir. Pushpendra Singh',
       year: '2008-2010',
@@ -462,8 +462,8 @@ export const siteData = {
       director: 'Pushpendra Singh',
       studio: 'Star Plus & Balaji Telefilms',
       milestone: '444 Episodes & Historic Prime-Time Hit',
-      img: '/assets/images/pi4.jpg',
-      bannerImg: '/assets/images/pi4.jpg',
+      img: '/assets/images/pi4.webp',
+      bannerImg: '/assets/images/pi4.webp',
       synopsis: 'A sweeping cross-border romance depicting unconditional devotion and personal sacrifice. It notably introduced Sushant Singh Rajput in his television acting debut as the beloved younger brother Preet Juneja.',
       stills: [
         { img: '/assets/images/kis_desh_mein_hai_meraa_dil.webp', title: 'Sushant Singh Rajput Debut Scene as Preet Juneja', tag: '1280x720 HD Debut Frame' },
@@ -490,12 +490,12 @@ export const siteData = {
       director: 'Pushpendra Singh',
       studio: 'Sony TV & Balaji Telefilms',
       milestone: 'Prime Time Sony TV Romantic Comedy',
-      posterImg: '/assets/images/kuch is trh.png',
-      img: '/assets/images/kuch is trh.png',
-      bannerImg: '/assets/images/kuch is trh.png',
+      posterImg: '/assets/images/kuch is trh.webp',
+      img: '/assets/images/kuch is trh.webp',
+      bannerImg: '/assets/images/kuch is trh.webp',
       synopsis: 'A witty, lighthearted romantic comedy chronicling Kanya Godbole, an optimistic girl living with a split identity condition who finds herself in a whirlwind contract marriage within the elite Nanda business empire.',
       stills: [
-        { img: '/assets/images/kuch is trh.png', title: 'Kanya Godbole & Ranbir Nanda Wedding Sequence', tag: '1280x720 HD Broadcast' },
+        { img: '/assets/images/kuch is trh.webp', title: 'Kanya Godbole & Ranbir Nanda Wedding Sequence', tag: '1280x720 HD Broadcast' },
         { img: '/assets/images/bts_rehearsal.webp', title: 'Studio Rehearsal & Comic Timing Session', tag: 'Rehearsal' }
       ],
       cast: [
@@ -738,7 +738,7 @@ export const siteData = {
     headingPart1: 'We see',
     headingAccent: 'cinema',
     headingPart2: 'as craft first: every frame planned, every story earned.',
-    bannerImg: '/assets/images/about.png',
+    bannerImg: '/assets/images/about.webp',
     p1: 'S&P Chitralok Studios began with one camera, a tight-knit unit, and an uncompromising belief: stories from India deserve the discipline and artistic depth of world cinema. Today, we stand as a premier creative production hub headquartered in East Delhi.',
     p2: 'We are celebrated for commercial advertising that carries the soul and patience of auteur cinema, and independent productions executed with international commercial rigor. Our core directors, DoPs, sound engineers, and post-production artists collaborate like a synchronized orchestra.',
     steps: [
@@ -844,7 +844,7 @@ export const siteData = {
       },
       {
         name: 'Prragati Chauhaan',
-        img: '/assets/images/pp.jpeg',
+        img: '/assets/images/pp.webp',
         vision: 'Cinema is the ultimate conduit of empathy. Breathing life into complex characters and shaping narratives from page to screen is our true calling.',
         detailsPath: '/actor/prragati-chauhaan',
         path: '/actor/prragati-chauhaan'
@@ -854,7 +854,7 @@ export const siteData = {
       {
         name: 'Prragati Chauhaan',
         tag: 'Lead Protagonist',
-        img: '/assets/images/actress.jpg',
+        img: '/assets/images/actress.webp',
         // credit: 'Commercial Ads, Print Campaigns & Fashion Modeling',
         vision: 'Acting is not merely performing; it is a sacred act of stepping into the soul of another human being and defending their truth without judgment.',
         notes: 'A sheltered tribal girl who transforms into a determined woman fighting for her dignity.',
@@ -910,7 +910,7 @@ export const siteData = {
         kind: 'Feature Film (Director)',
         network: 'Theatrical Release',
         role: 'Director',
-        img: '/assets/images/Aaoge Jab Tum_ Musical Sunset Romance (1).png'
+        img: '/assets/images/Aaoge Jab Tum_ Musical Sunset Romance (1).webp'
       },
       {
         year: 'In Filming',
@@ -918,7 +918,7 @@ export const siteData = {
         kind: 'Feature Film (Writer & Director)',
         network: 'S&P Chitralok Studios',
         role: 'Writer & Director',
-        img: '/assets/images/Paid Palki_ A Rural Love Story journey.png'
+        img: '/assets/images/Paid Palki_ A Rural Love Story journey.webp'
       },
       {
         year: '2005',
@@ -934,7 +934,7 @@ export const siteData = {
         kind: 'Television Series',
         network: 'Zee TV',
         role: 'Director',
-        img: '/assets/images/pi6.jpg'
+        img: '/assets/images/pi6.webp'
       },
       {
         year: '2011',
@@ -942,7 +942,7 @@ export const siteData = {
         kind: 'Television Series',
         network: 'Sony Entertainment TV / Balaji',
         role: 'Director',
-        img: '/assets/images/kuch is trh.png'
+        img: '/assets/images/kuch is trh.webp'
       },
       {
         year: '2009',
@@ -958,7 +958,7 @@ export const siteData = {
         kind: 'Mythological Romance',
         network: 'STAR One / Sagar Arts',
         role: 'Director',
-        img: '/assets/images/shakuntala1.jpg'
+        img: '/assets/images/shakuntala1.webp'
       },
       {
         year: '2008–2009',
@@ -966,7 +966,7 @@ export const siteData = {
         kind: 'Mythological Drama',
         network: 'Colors TV / Sagar Pictures',
         role: 'Director',
-        img: '/assets/images/pi1.jpg'
+        img: '/assets/images/pi1.webp'
       },
       {
         year: '2008',
@@ -982,7 +982,7 @@ export const siteData = {
         kind: 'Drama Series',
         network: 'Star Plus / Balaji Telefilms',
         role: 'Director',
-        img: '/assets/images/pi4.jpg'
+        img: '/assets/images/pi4.webp'
       },
       {
         year: '2006',
@@ -990,7 +990,7 @@ export const siteData = {
         kind: 'Iconic Daily Drama',
         network: 'Star Plus / Balaji Telefilms',
         role: 'Director',
-        img: '/assets/images/kuki sas bhi bahu thi.png'
+        img: '/assets/images/kuki sas bhi bahu thi.webp'
       },
       {
         year: '2006',
@@ -1038,7 +1038,7 @@ export const siteData = {
     tag: 'Professional Model & Actress',
     character: 'Kemli',
     film: 'Paid Palki',
-    portraitImg: '/assets/images/actor.PNG',
+    portraitImg: '/assets/images/actor.webp',
     bannerImg: '/assets/images/paid_palki_banner.webp',
     stillImg: '/assets/images/bts/bts_clip_01_set_action_poster.webp',
     imdbUrl: 'https://www.imdb.com',
@@ -1058,7 +1058,7 @@ export const siteData = {
         channel: 'Purani Dili Talkies',
         kind: 'Social Drama · Short Film',
         role: 'Purani Dili Talkies',
-        img: '/assets/images/pdt.png',
+        img: '/assets/images/pdt.webp',
         desc: 'A social drama exploring prejudice, motherhood, and emotional strength.',
         videoUrl: 'https://www.youtube-nocookie.com/embed/w55jPICtzK0?autoplay=1',
         externalUrl: 'https://www.youtube.com/watch?v=w55jPICtzK0'
@@ -1069,7 +1069,7 @@ export const siteData = {
         channel: 'Rohit R Gaba',
         kind: 'Social Awareness · Short Film',
         role: 'Rohit R Gaba',
-        img: '/assets/images/rohitgaba.png',
+        img: '/assets/images/rohitgaba.webp',
         desc: 'Social awareness short film exploring relationships, integrity, and real-life values.',
         videoUrl: 'https://www.youtube-nocookie.com/embed/kUddWfYdcz0?autoplay=1',
         externalUrl: 'https://www.youtube.com/watch?v=kUddWfYdcz0'
@@ -1080,7 +1080,7 @@ export const siteData = {
         channel: 'CARS24',
         kind: 'Commercial · Digital Ad',
         role: 'CARS24',
-        img: '/assets/images/cars24.png',
+        img: '/assets/images/cars24.webp',
         desc: 'Commercial advertisement and digital brand campaign for CARS24.',
         externalUrl: 'https://www.instagram.com/reel/ChRUuG2p5Mv/?igshid=YmMyMTA2M2Y%3D'
       },
@@ -1090,7 +1090,7 @@ export const siteData = {
         channel: 'Nijo Jonson',
         kind: 'Social Drama · Short Film',
         role: 'Nijo Jonson',
-        img: '/assets/images/nijo.png',
+        img: '/assets/images/nijo.webp',
         desc: 'An inspiring short drama of compassion, empathy, and silent empowerment.',
         videoUrl: 'https://www.youtube-nocookie.com/embed/Atv7iXHF_4Q?autoplay=1',
         externalUrl: 'https://www.youtube.com/watch?v=Atv7iXHF_4Q'

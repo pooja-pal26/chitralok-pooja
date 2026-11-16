@@ -23,7 +23,7 @@ export default function ActorProfile({ onOpenVideo, isEmbed: isEmbedProp }) {
     tag: 'Lead Protagonist · Narrative Lead',
     // character: 'Kemli',
     // film: 'Paid Palki',
-    portraitImg: '/assets/images/actor.PNG',
+    portraitImg: '/assets/images/actor.webp',
     bannerImg: '/assets/images/paid_palki_banner.webp',
     quote: '“Acting is not merely performing; it is a sacred act of stepping into the soul of another human being and defending their truth without judgment.”',
     bio1: 'Prragati Chauhaan is a powerhouse Indian actress, model, and screen narrative architect recognized for her nuanced character immersion, raw emotional gravity, and dedication to socially grounded Indian cinema.',
