@@ -229,7 +229,7 @@ export default function About() {
         <div className="about-category-block">
           <RosterCategoryHeader
             title="01 · PRODUCERS"
-            subtitle={`${about.producers?.length || 6} Executive Producers`}
+            // subtitle={`${about.producers?.length || 6} Executive Producers`}
           />
           <div className="about-team-grid">
             {about.producers && about.producers.map((producer, idx) => (

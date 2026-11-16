@@ -209,7 +209,6 @@ export const siteData = {
       genre: 'Social Drama / Rural Romance',
       director: 'Pushpenddra Singh',
       studio: 'S&P Chitralok Studios',
-      producers: 'Alok Ji, Pawan Ji, Amod Ji, Krishna Kant Ji, Santanu Ji, Vipul Ji',
       screenplay: 'Pushpendrra Singh & Prragati Chauhaan',
       dialogues: 'Shashank Singh',
       dop: 'Shashank Sahu',
@@ -765,67 +764,46 @@ export const siteData = {
     producers: [
       {
         name: 'Alok Pandey',
-        // role: 'Producer',
         monogram: 'AS',
-        img: '/assets/images/producers/producer_alok.webp',
-        // subtitle: 'Executive Producer',
-        // credit: 'S&P Chitralok Studios · Feature Film Division',
+        img: '/assets/images/producers/producer_placeholder.webp',
         vision: 'Championing high-impact narratives and world-class production execution that resonate across global audiences.'
       },
       {
         name: 'Pawan Kumar',
-        // role: 'Producer',
         monogram: 'PS',
-        img: '/assets/images/producers/producer_pawan.webp',
-        // subtitle: 'Executive Producer',
-        // credit: 'S&P Chitralok Studios · Production Operations',
+        img: '/assets/images/producers/producer_placeholder.webp',
         vision: 'Fostering cultural authenticity and cinematic scale that leaves an enduring legacy in Indian cinema.'
       },
       {
         name: 'Amod Kumar Singh',
-        // role: 'Producer',
         monogram: 'AS',
-        img: '/assets/images/producers/producer_amod.webp',
-        // subtitle: 'Executive Producer',
-        // credit: 'S&P Chitralok Studios · Creative Development',
+        img: '/assets/images/producers/producer_placeholder.webp',
         vision: 'Pioneering cutting-edge cinematic storytelling with unwavering dedication to craft and creative integrity.'
       },
       {
         name: 'Krishna Kant Rai',
-        // role: 'Producer',
         monogram: 'KS',
-        img: '/assets/images/producers/producer_krishnakant.webp',
-        // subtitle: 'Executive Producer',
-        // credit: 'S&P Chitralok Studios · Technical & Theatrical',
+        img: '/assets/images/producers/producer_placeholder.webp',
         vision: 'Driving visionary collaborations and technical excellence from script development to theatrical release.'
       },
       {
         name: 'Santanu Kumar',
-        // role: 'Producer',
         monogram: 'SS',
-        img: '/assets/images/producers/producer_shantanu.webp',
-        // subtitle: 'Executive Producer',
-        // credit: 'S&P Chitralok Studios · Audiovisual Productions',
+        img: '/assets/images/producers/producer_placeholder.webp',
         vision: 'Empowering fearless storytelling and groundbreaking audiovisual experiences for modern cinema lovers.'
       },
       {
         name: 'Vipul Rai',
-        // role: 'Producer',
         monogram: 'VS',
-        img: '/assets/images/producers/producer_vipul.webp',
-        // subtitle: 'Executive Producer',
-        // credit: 'S&P Chitralok Studios · Strategic Partnerships',
+        img: '/assets/images/producers/producer_placeholder.webp',
         vision: 'Committed to bringing transformative, socially resonant narratives to life with unmatched production value.'
       }
     ],
     directors: [
       {
         name: 'Pushpendra Singh',
-        // role: 'Director',
-        // subtitle: 'Television & Film Director',
         tag: 'Lead Director',
         img: '/assets/images/pushpenddra_singh.webp',
-        // credit: 'Paid Palki · Aaoge Jab Tum · Sarkar (2005) · Prime-Time Epics',
         vision: 'Stories on screen become part of the collective consciousness when told with truth, human vulnerability, and unwavering cinematic craft.',
         path: '/director'
       }
@@ -833,11 +811,7 @@ export const siteData = {
     writers: [
       {
         name: 'Pushpendra Singh',
-        // role: 'Writer',
-        // subtitle: 'Writer & Director · Story & Screenplay',
-        // tag: 'Narrative Architect',
         img: '/assets/images/pushpenddra_singh.webp',
-        // credit: 'Aaoge Jab Tum (2026) · Sarkar · Television Epics',
         vision: 'Architect of high-stakes social realism and emotional narratives that bridge classic Indian literature with commercial cinema.',
         detailsPath: '/director',
         path: '/director'
@@ -873,23 +847,20 @@ export const siteData = {
     {
       id: 1,
       name: 'AMOD KUMAR SINGH',
-      img: '/assets/images/producers/producer_amod.webp',
+      img: '/assets/images/producers/producer_placeholder.webp',
       vision: 'Pioneering cutting-edge cinematic storytelling with unwavering dedication to craft, strategic leadership, and creative integrity.',
-      // bio: 'Leading strategic vision and institutional governance at S&P Chitralok Studios, championing transformative storytelling and world-class production value.'
     },
     {
       id: 2,
       name: 'PAWAN KUMAR',
-      img: '/assets/images/producers/producer_pawan.webp',
+      img: '/assets/images/producers/producer_placeholder.webp',
       vision: 'Fostering cultural authenticity and cinematic scale that leaves an enduring legacy in Indian cinema and global entertainment.',
-      // bio: 'Steering high-impact production operations and creative development, dedicated to bringing socially grounded narratives to life on screen.'
     },
     {
       id: 3,
       name: 'KRISHNA PANDEY',
-      img: '/assets/images/producers/producer_krishnakant.webp',
+      img: '/assets/images/producers/producer_placeholder.webp',
       vision: 'Driving visionary collaborations, institutional growth, and technical excellence from script development to theatrical release.',
-      // bio: 'Championing institutional partnerships, technical infrastructure, and groundbreaking audiovisual ventures that expand cinematic frontiers.'
     }
   ],
 
