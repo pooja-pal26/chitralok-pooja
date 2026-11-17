@@ -1699,7 +1699,7 @@ button {
   color: var(--gold-primary) !important;
 }
 
-/* Work Projects Grid — 4 Columns on Desktop matching Director Showcase */
+/* Work Projects Grid — 3 Columns on Desktop */
 .work-projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1718,6 +1718,36 @@ button {
     grid-template-columns: 1fr;
     gap: 24px;
   }
+}
+
+/* Directorial Archive Grid — 3 Columns on Desktop */
+.director-archive-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 28px;
+}
+
+@media (max-width: 960px) {
+  .director-archive-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 18px;
+  }
+}
+
+@media (max-width: 580px) {
+  .director-archive-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+.director-archive-card {
+  cursor: pointer;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.director-archive-card:hover .director-archive-poster-img {
+  transform: scale(1.05);
 }
 
 /* ==========================================================================

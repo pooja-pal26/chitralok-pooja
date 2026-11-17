@@ -436,9 +436,9 @@ export default function ProjectModal({ project, onClose, onOpenVideo }) {
               )}
               {project.dop && (
                 <div>
-                  <span style={{ display: 'block', fontSize: '10px', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--gold-primary)', fontWeight: 600 }}>
+                  {/* <span style={{ display: 'block', fontSize: '10px', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--gold-primary)', fontWeight: 600 }}>
                     DOP (Cinematography)
-                  </span>
+                  </span> */}
                   <span style={{ fontSize: '13px', color: 'var(--text-primary)', marginTop: '4px', display: 'block', lineHeight: 1.5 }}>
                     {project.dop}
                   </span>

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { siteData } from '../data/content';
 import GoldenCTA from '../components/GoldenCTA';
 import KineticTicker from '../components/KineticTicker';
@@ -7,6 +7,19 @@ import KineticTicker from '../components/KineticTicker';
 export default function Director({ onOpenVideo }) {
   const { director } = siteData;
   const [activeFilter, setActiveFilter] = useState('all');
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === '#directorial-archive' || window.location.hash === '#directorial-archive') {
+      const timer = setTimeout(() => {
+        const el = document.getElementById('directorial-archive');
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 150);
+      return () => clearTimeout(timer);
+    }
+  }, [location.hash]);
 
   const filteredFilms = director.films.filter((film) => {
     if (activeFilter === 'films') {
@@ -215,7 +228,7 @@ export default function Director({ onOpenVideo }) {
       </section>
 
       {/* Complete Directorial Filmography & Television Showcase with Real Posters */}
-      <section style={{ padding: '0 var(--container-pad) 128px' }}>
+      <section id="directorial-archive" style={{ padding: '0 var(--container-pad) 128px', scrollMarginTop: '96px' }}>
         <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'baseline', justifyContent: 'space-between', gap: '20px', marginBottom: '40px' }}>
           <div>
             <span style={{ fontSize: '12px', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--gold-primary)', fontWeight: 600, display: 'block', marginBottom: '8px' }}>
@@ -263,15 +276,12 @@ export default function Director({ onOpenVideo }) {
           </div>
         </div>
 
-        {/* Visual Poster Grid with Real Web Images */}
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))',
-          gap: '32px 24px'
-        }}>
+        {/* Visual Poster Grid — 3 Columns in one row */}
+        <div className="director-archive-grid">
           {filteredFilms.map((item, idx) => (
             <div
               key={idx}
+              className="director-archive-card"
               style={{
                 background: 'var(--bg-card)',
                 border: '1px solid var(--border-subtle)',
@@ -292,43 +302,27 @@ export default function Director({ onOpenVideo }) {
                 e.currentTarget.style.boxShadow = 'none';
               }}
             >
-              {/* Poster Container */}
+              {/* Poster Container — 2:1 widescreen ratio matching project artwork */}
               <div style={{
                 position: 'relative',
-                aspectRatio: '3/4',
+                aspectRatio: '2/1',
                 width: '100%',
                 background: '#0a0a09',
                 overflow: 'hidden'
               }}>
-                {/* Ambient Blurred Backdrop for Full Artwork Depth */}
-                <img
-                  src={item.img}
-                  alt=""
-                  aria-hidden="true"
-                  style={{
-                    position: 'absolute',
-                    inset: '-15px',
-                    width: 'calc(100% + 30px)',
-                    height: 'calc(100% + 30px)',
-                    objectFit: 'cover',
-                    objectPosition: 'center',
-                    filter: 'blur(22px) brightness(0.32)',
-                    opacity: 0.85,
-                    pointerEvents: 'none'
-                  }}
-                />
                 {/* 100% Full Uncut Main Image */}
                 <img
                   src={item.img}
                   alt={item.title}
+                  className="director-archive-poster-img"
                   style={{
                     position: 'absolute',
                     inset: 0,
                     width: '100%',
                     height: '100%',
-                    objectFit: 'contain',
+                    objectFit: 'cover',
                     objectPosition: 'center',
-                    transition: 'transform 0.4s ease'
+                    transition: 'transform 0.45s cubic-bezier(0.16, 1, 0.3, 1)'
                   }}
                   loading="lazy"
                   onError={(e) => {
@@ -346,7 +340,9 @@ export default function Director({ onOpenVideo }) {
                   fontSize: '10px',
                   fontFamily: 'var(--font-mono)',
                   color: 'var(--gold-primary)',
-                  letterSpacing: '0.1em'
+                  letterSpacing: '0.1em',
+                  zIndex: 2,
+                  borderRadius: '2px'
                 }}>
                   {item.year}
                 </div>

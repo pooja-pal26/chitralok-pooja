@@ -254,7 +254,7 @@ export default function About() {
               <TeamCard
                 key={idx}
                 person={director}
-                actionLink={director.path ? { to: director.path, label: 'Explore Directorial Archive', variant: 'button' } : null}
+                actionLink={{ to: '/director#directorial-archive', label: 'Explore Directorial Archive', variant: 'button' }}
               />
             ))}
           </div>
@@ -269,7 +269,9 @@ export default function About() {
                 key={idx}
                 person={writer}
                 actionLink={{
-                  to: writer.detailsPath || writer.path || (writer.name.toLowerCase().includes('pushpendra') ? '/director' : '/actor/prragati-chauhaan'),
+                  to: (writer.name.toLowerCase().includes('pushpendra'))
+                    ? '/director#directorial-archive'
+                    : (writer.detailsPath || writer.path || '/actor/prragati-chauhaan'),
                   label: 'View Details',
                   variant: 'button'
                 }}

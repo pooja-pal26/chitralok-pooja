@@ -211,7 +211,7 @@ export const siteData = {
       studio: 'S&P Chitralok Studios',
       screenplay: 'Pushpendrra Singh & Prragati Chauhaan',
       dialogues: 'Shashank Singh',
-      dop: 'Shashank Sahu',
+      // dop: 'Shashank Sahu',
       img: '/assets/images/Paid Palki_ A Rural Love Story journey.webp',
       bannerImg: '/assets/images/Paid Palki_ A Rural Love Story journey.webp',
       synopsis: 'Set in the heart of rural Madhya Pradesh, Santu, an unmarried young man facing societal pressure, is persuaded to buy a bride from a remote tribal settlement. Captivated by Kemli, a sheltered tribal girl, he brings her home where genuine affection blossoms between them. But when Kemli’s family forcibly takes her back, Santu embarks on an emotional struggle to reunite with the woman he loves—a powerful story of love emerging from exploitation and the courage to challenge human trafficking.',
@@ -805,7 +805,7 @@ export const siteData = {
         tag: 'Lead Director',
         img: '/assets/images/pushpenddra_singh.webp',
         vision: 'Stories on screen become part of the collective consciousness when told with truth, human vulnerability, and unwavering cinematic craft.',
-        path: '/director'
+        path: '/director#directorial-archive'
       }
     ],
     writers: [
@@ -813,8 +813,8 @@ export const siteData = {
         name: 'Pushpendra Singh',
         img: '/assets/images/pushpenddra_singh.webp',
         vision: 'Architect of high-stakes social realism and emotional narratives that bridge classic Indian literature with commercial cinema.',
-        detailsPath: '/director',
-        path: '/director'
+        detailsPath: '/director#directorial-archive',
+        path: '/director#directorial-archive'
       },
       {
         name: 'Prragati Chauhaan',
