@@ -762,12 +762,12 @@ export const siteData = {
       }
     ],
     producers: [
-      {
-        name: 'Alok Pandey',
-        monogram: 'AS',
-        img: '/assets/images/producers/producer_placeholder.webp',
-        vision: 'Championing high-impact narratives and world-class production execution that resonate across global audiences.'
-      },
+      // {
+      //   name: 'Alok Pandey',
+      //   monogram: 'AS',
+      //   img: '/assets/images/producers/producer_placeholder.webp',
+      //   vision: 'Championing high-impact narratives and world-class production execution that resonate across global audiences.'
+      // },
       {
         name: 'Pawan Kumar',
         monogram: 'PS',
