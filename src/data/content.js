@@ -762,12 +762,6 @@ export const siteData = {
       }
     ],
     producers: [
-      // {
-      //   name: 'Alok Pandey',
-      //   monogram: 'AS',
-      //   img: '/assets/images/producers/producer_placeholder.webp',
-      //   vision: 'Championing high-impact narratives and world-class production execution that resonate across global audiences.'
-      // },
       {
         name: 'Pawan Kumar',
         monogram: 'PS',
@@ -787,7 +781,7 @@ export const siteData = {
         vision: 'Driving visionary collaborations and technical excellence from script development to theatrical release.'
       },
       {
-        name: 'Santanu Kumar',
+        name: 'Shantanu Kumar',
         monogram: 'SS',
         img: '/assets/images/producers/producer_placeholder.webp',
         vision: 'Empowering fearless storytelling and groundbreaking audiovisual experiences for modern cinema lovers.'
