@@ -29,6 +29,10 @@ export default function Home({ onOpenVideo }) {
     }
   ];
 
+  useEffect(() => {
+    document.title = 'Home - S&P Chitralok Studios';
+  }, []);
+
   // Hero carousel auto-play timer
   useEffect(() => {
     const timer = setInterval(() => {

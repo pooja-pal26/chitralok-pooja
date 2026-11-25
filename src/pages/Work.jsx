@@ -32,6 +32,10 @@ export default function Work({ onOpenVideo }) {
   const [activeFilter, setActiveFilter] = useState(() => parseFilterFromQuery(catQuery, location.pathname));
   const [selectedProject, setSelectedProject] = useState(null);
 
+  useEffect(() => {
+    document.title = 'Work - S&P Chitralok Studios';
+  }, []);
+
   // Synchronize state when URL query param or path changes
   useEffect(() => {
     setActiveFilter(parseFilterFromQuery(catQuery, location.pathname));

@@ -8,7 +8,7 @@ export default function Directors() {
   const { boardOfDirectors } = siteData;
 
   useEffect(() => {
-    document.title = 'Directors — S&P Chitralok Studios';
+    document.title = 'Directors - S&P Chitralok Studios';
     window.scrollTo(0, 0);
   }, []);
 

@@ -122,6 +122,10 @@ export default function About() {
   const { about } = siteData;
   const [iframeModal, setIframeModal] = useState({ isOpen: false, url: '', title: '' });
 
+  useEffect(() => {
+    document.title = 'About Us - S&P Chitralok Studios';
+  }, []);
+
   // Close modal on Escape key and lock body scroll when modal is open
   useEffect(() => {
     if (!iframeModal.isOpen) return;

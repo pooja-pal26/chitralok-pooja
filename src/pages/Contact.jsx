@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { siteData } from '../data/content';
 import EastDelhiMap from '../components/EastDelhiMap';
 
 export default function Contact() {
   const { brand } = siteData;
+
+  useEffect(() => {
+    document.title = 'Contact Us - S&P Chitralok Studios';
+  }, []);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
