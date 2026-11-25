@@ -763,6 +763,12 @@ export const siteData = {
     ],
     producers: [
       {
+        name: 'Krishna Pandey',
+        monogram: 'KS',
+        img: '/assets/images/producers/producer_placeholder.webp',
+        vision: 'Creating meaningful cinematic experiences through powerful storytelling, creative excellence, and a deep connection with Indian culture.'
+      },
+      {
         name: 'Pawan Kumar',
         monogram: 'PS',
         img: '/assets/images/producers/producer_placeholder.webp',
@@ -957,7 +963,7 @@ export const siteData = {
       }
     ]
   }
-,
+  ,
 
   prragatiProfile: {
     nameFirst: 'Prragati',
